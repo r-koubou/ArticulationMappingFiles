@@ -16,7 +16,7 @@ See also: [https://www.steinberg.net/en/company/technologies/vst_expression.html
 
 MIT License
 
-### Cubase Expression Maps (Ja)
+## Cubase Expression Maps (Ja)
 
 Cubase Expression Map ファイルを扱っているリポジトリです。
 
