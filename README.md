@@ -6,7 +6,7 @@ Cubase Expression Map files repository.
 - Mirror of official files (see **NOTICE** file)
 - Mirror of other user file(s) that currently cannot download from their site (see **NOTICE** file)
 
-### Why not commit your Expression map files?
+### Why not add your Expression map files?
 
 If you are interested in make a Expression map file, Please **Pull Request**.
 
