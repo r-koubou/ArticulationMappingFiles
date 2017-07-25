@@ -10,6 +10,10 @@ https://github.com/r-koubou/XLS2ExpressionMap/releases
 ＊自分用、及びパワーユーザー向けです。
 ＊上記の単語で不明点がある場合はファイルを触ることを推奨しません。
 
+----
+
+XLS2ExpressionMap
+
 Copyright (c) 2017 R-Koubou
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
