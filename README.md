@@ -12,6 +12,12 @@ If you are interested in make a Expression map file, Please **Pull Request**.
 
 See also: [https://www.steinberg.net/en/company/technologies/vst_expression.html](https://www.steinberg.net/en/company/technologies/vst_expression.html)
 
+
+### Easy & Advanced Management on spreadsheet
+
+I developed tool which convert from spreadsheet to *.expression map tool.
+If you are interested, download from [HERE](http://https://github.com/r-koubou/XLS2ExpressionMap)
+
 ### License
 
 MIT License
@@ -29,6 +35,12 @@ Cubase Expression Map ファイルを扱っているリポジトリです。
 もし興味があれば**プルリクエスト**を出して下さい。
 
 See also: [https://japan.steinberg.net/jp/company/technology/vst_expression.html](https://japan.steinberg.net/jp/company/technology/vst_expression.html)
+
+### スプレッドシートで高度な管理
+
+スプレッドシート上で一元管理し、コンバートするツールを開発しました。
+もし興味がありましたら [コチラからダウンロード](http://https://github.com/r-koubou/XLS2ExpressionMap) してください。
+
 
 ### ライセンス
 
