@@ -4,7 +4,7 @@
 
 ## ■ 概要
 
-**[Junk Guitar for KONTAKT](http://junk-spider.com/jp/products/junkguitarforkontakt.html)**用のエクスプレッションマップ。
+**[Junk Guitar for KONTAKT](https://fujiya-instruments.com/jp/index.html)**用のエクスプレッションマップ。
 
 Cubase での Junk Guitar のキースイッチの組み合わせた打ち込み負荷を軽減します。
 エクスプレッションマップを使用することで、奏法の切り替えを可視化し
@@ -22,12 +22,6 @@ Expression map 機能をサポートする Cubase のバージョン。
 
 奏法パターンの組み合わせが多いため、演奏モード毎にファイルを分けています。
 
-* Mono mode
-    * Junk Guitar Mono.expressionmap
-* Poly mode
-    * Junk Guitar Poly.expressionmap
-* Chord mode
-    * Junk Guitar Chord.expressionmap
 
 ## ■ 使い方
 
@@ -45,6 +39,19 @@ Expression map 機能をサポートする Cubase のバージョン。
 
 ## ■ 複数の演奏モードを使い分ける場合
 
+
+### Track Instruments (インストゥルメントトラック)
+
+エクスプレッションマップファイルで読み込んだ奏法をアサインします。
+
+Cubase 7.5 からインストゥルメントトラックが強化され、MIDIトラックのMIDI Out先にインストゥルメントトラックを指定することが出来るようになりました。
+
+[詳細（sleepfreaks）](http://sleepfreaks-dtm.com/for-advance-cubase/cubase-7-5-vst-instrument/)
+
+現行の Cubaseではラックを使用することはあまりないと思います。
+以下のラックと同じ手順でエクスプレッションマップのマッピングが可能です。
+Cubase7.5より前のバージョン、6～7を使用されている場合は、従来の以下のラック（マルチティンバー）の使用を想定しています。
+
 ### Rack Instruments (ラック)
 
 1. 演奏モード分の Junk Guitar のパッチをロードして下さい。
@@ -61,9 +68,9 @@ Expression map 機能をサポートする Cubase のバージョン。
    エクスプレッションマップファイルで読み込んだ奏法をアサインします。
 
 
-### Track Instruments (インストゥルメントトラック)
+### MIDI トラック
 
-エクスプレッションマップファイルで読み込んだ奏法をアサインします。
+ストップキーやリフモードなど細かな制御をする場合、専用のMIDIトラックを作成し、MIDI Out先を対象のKONTAKTに設定＆エクスプレッションマップを設定することを想定しています。
 
 ## ■ 利用条件
 
