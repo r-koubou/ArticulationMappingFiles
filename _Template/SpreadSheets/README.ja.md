@@ -21,7 +21,7 @@ SpreadSheetsフォルダ内の Template.xlsx を任意のファイル名に設�
 
 
 
-## テンプレートのライセンス
+## スプレッドシートのライセンス
 
 MIT License
 
