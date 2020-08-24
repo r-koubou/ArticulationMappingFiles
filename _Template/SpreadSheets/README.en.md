@@ -1,27 +1,26 @@
-## 概要
+## Overview
 
-カスタマイズしてExcel上でカスタマイズ、修正を行い
-エクスプレッションマップファイルを生成することが出来ます。
+Customizing and modifying it in Excel, and You can generate an expression map file.
 
-## 作成方法
+## How to create
 
-### スプレッドシートを編集する
+### Editing the Spreadsheet
 
-SpreadSheetsフォルダ内の Template.xlsx を任意のファイル名に設定し、スプレッドシートが編集可能なソフトを使って記述をします。
-主に以下のアプリケーションで編集可能です。
+Set the name of the file Template.xlsx in the SpreadSheets folder to your desired file name and write it using any spreadsheet-editing software.
+The following applications are primarily capable of editing this file
 
 - Microsoft Excel
-- Google スプレッドシート
+- Google Spreadsheet
 - OpenOffice
 
-### 変換する
+### Conversion
 
-別途拙作のツールが必要で、以下のURLで公開しています。
+A separate tool of my work is needed and is available at the following URL
 [https://github.com/r-koubou/ArticulationUtility](https://github.com/r-koubou/ArticulationUtility)
 
 
 
-## テンプレートのライセンス
+## License
 
 MIT License
 
