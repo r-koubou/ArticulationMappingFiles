@@ -1,9 +1,31 @@
+## 概要
+
 カスタマイズしてExcel上でカスタマイズ、修正を行い
 エクスプレッションマップファイルを生成することが出来ます。
 
-別途拙作のツールが必要で、以下のURLで公開しています。
-https://github.com/r-koubou/XLS2ExpressionMap/releases
+## 作成方法
 
+### スプレッドシートを編集する
+
+SpreadSheetsフォルダ内の Template.xlsx を任意のファイル名に設定し、スプレッドシートが編集可能なソフトを使って記述をします。
+主に以下のアプリケーションで編集可能です。
+
+- Microsoft Excel
+- Google スプレッドシート
+- OpenOffice
+
+### 変換する
+
+別途拙作のツールが必要で、以下のURLで公開しています。
+[https://github.com/r-koubou/ArticulationUtility](https://github.com/r-koubou/ArticulationUtility)
+
+
+
+## スプレッドシートのライセンス
+
+MIT License
+
+~~~
 Copyright (c) 2020 R-Koubou
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,3 +45,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+~~~
