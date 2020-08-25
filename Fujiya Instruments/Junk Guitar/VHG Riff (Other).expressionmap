@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <InstrumentMap>
-  <string name="name" value="Organic Fingered Bass (Finger)" wide="true" />
+  <string name="name" value="VHG Riff (Other)" wide="true" />
   <member name="controller">
     <int name="ownership" value="1" />
   </member>
   <member name="slotvisuals">
     <int name="ownership" value="1" />
     <list name="obj" type="obj">
-      <obj class="USlotVisuals" ID="75202344">
+      <obj class="USlotVisuals" ID="58785303">
         <int name="displaytype" value="1" />
         <int name="articulationtype" value="1" />
         <int name="symbol" value="0" />
@@ -15,42 +15,42 @@
         <string name="text" value="IDLE" wide="true" />
         <string name="description" value="IDLE" wide="true" />
       </obj>
-      <obj class="USlotVisuals" ID="62047756">
+      <obj class="USlotVisuals" ID="121453403">
         <int name="displaytype" value="1" />
         <int name="articulationtype" value="1" />
         <int name="symbol" value="0" />
         <int name="group" value="0" />
-        <string name="text" value="Finger - Auto" wide="true" />
-        <string name="description" value="Finger - Auto" wide="true" />
+        <string name="text" value="Auto Alternate" wide="true" />
+        <string name="description" value="Auto Alternate" wide="true" />
       </obj>
-      <obj class="USlotVisuals" ID="96343148">
+      <obj class="USlotVisuals" ID="88288054">
         <int name="displaytype" value="1" />
         <int name="articulationtype" value="1" />
         <int name="symbol" value="0" />
         <int name="group" value="0" />
-        <string name="text" value="Finger - Index" wide="true" />
-        <string name="description" value="Finger - Index" wide="true" />
+        <string name="text" value="Always Down" wide="true" />
+        <string name="description" value="Always Down" wide="true" />
       </obj>
-      <obj class="USlotVisuals" ID="1534132">
+      <obj class="USlotVisuals" ID="76383181">
         <int name="displaytype" value="1" />
         <int name="articulationtype" value="1" />
         <int name="symbol" value="0" />
         <int name="group" value="0" />
-        <string name="text" value="Finger - Middle" wide="true" />
-        <string name="description" value="Finger - Middle" wide="true" />
+        <string name="text" value="Always Up" wide="true" />
+        <string name="description" value="Always Up" wide="true" />
       </obj>
     </list>
   </member>
   <member name="slots">
     <int name="ownership" value="1" />
     <list name="obj" type="obj">
-      <obj class="PSoundSlot" ID="14330591">
+      <obj class="PSoundSlot" ID="111431977">
         <int name="color" value="0" />
-        <obj class="PSlotThruTrigger" name="remote" ID="48474192">
+        <obj class="PSlotThruTrigger" name="remote" ID="81214912">
           <int name="status" value="144" />
           <int name="data1" value="-1" />
         </obj>
-        <obj class="PSlotMidiAction" name="action" ID="39775658">
+        <obj class="PSlotMidiAction" name="action" ID="14886335">
           <int name="version" value="600" />
           <int name="channel" value="-1" />
           <int name="minVelocity" value="0" />
@@ -64,7 +64,7 @@
           <member name="noteChanger">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="PSlotNoteChanger" ID="22999535">
+              <obj class="PSlotNoteChanger" ID="65047428">
                 <int name="channel" value="-1" />
                 <int name="minVelocity" value="0" />
                 <int name="maxVelocity" value="127" />
@@ -86,7 +86,7 @@
         <member name="sv">
           <int name="ownership" value="2" />
           <list name="obj" type="obj">
-            <obj class="USlotVisuals" ID="80965248">
+            <obj class="USlotVisuals" ID="20682632">
               <int name="displaytype" value="1" />
               <int name="articulationtype" value="1" />
               <int name="symbol" value="0" />
@@ -100,13 +100,13 @@
           <string name="s" value="IDLE" wide="true" />
         </member>
       </obj>
-      <obj class="PSoundSlot" ID="132516602">
+      <obj class="PSoundSlot" ID="39877681">
         <int name="color" value="1" />
-        <obj class="PSlotThruTrigger" name="remote" ID="113204759">
+        <obj class="PSlotThruTrigger" name="remote" ID="37510771">
           <int name="status" value="144" />
           <int name="data1" value="-1" />
         </obj>
-        <obj class="PSlotMidiAction" name="action" ID="56448566">
+        <obj class="PSlotMidiAction" name="action" ID="92412121">
           <int name="version" value="600" />
           <int name="channel" value="-1" />
           <int name="minVelocity" value="0" />
@@ -120,7 +120,7 @@
           <member name="noteChanger">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="PSlotNoteChanger" ID="107878268">
+              <obj class="PSlotNoteChanger" ID="45555790">
                 <int name="channel" value="-1" />
                 <int name="minVelocity" value="0" />
                 <int name="maxVelocity" value="127" />
@@ -135,41 +135,41 @@
           <member name="midiMessages">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="POutputEvent" ID="17154708">
+              <obj class="POutputEvent" ID="115265365">
                 <int name="status" value="144" />
-                <int name="data1" value="14" />
+                <int name="data1" value="18" />
                 <int name="data2" value="120" />
               </obj>
             </list>
           </member>
         </obj>
         <member name="name">
-          <string name="s" value="Finger - Auto" wide="true" />
+          <string name="s" value="Auto Alternate" wide="true" />
         </member>
         <member name="sv">
           <int name="ownership" value="2" />
           <list name="obj" type="obj">
-            <obj class="USlotVisuals" ID="93463767">
+            <obj class="USlotVisuals" ID="86803523">
               <int name="displaytype" value="1" />
               <int name="articulationtype" value="1" />
               <int name="symbol" value="0" />
               <int name="group" value="0" />
-              <string name="text" value="Finger - Auto" wide="true" />
-              <string name="description" value="Finger - Auto" wide="true" />
+              <string name="text" value="Auto Alternate" wide="true" />
+              <string name="description" value="Auto Alternate" wide="true" />
             </obj>
           </list>
         </member>
         <member name="name">
-          <string name="s" value="Finger - Auto" wide="true" />
+          <string name="s" value="Auto Alternate" wide="true" />
         </member>
       </obj>
-      <obj class="PSoundSlot" ID="58379291">
+      <obj class="PSoundSlot" ID="131883903">
         <int name="color" value="1" />
-        <obj class="PSlotThruTrigger" name="remote" ID="177162">
+        <obj class="PSlotThruTrigger" name="remote" ID="71965331">
           <int name="status" value="144" />
           <int name="data1" value="-1" />
         </obj>
-        <obj class="PSlotMidiAction" name="action" ID="122342753">
+        <obj class="PSlotMidiAction" name="action" ID="57765600">
           <int name="version" value="600" />
           <int name="channel" value="-1" />
           <int name="minVelocity" value="0" />
@@ -183,7 +183,7 @@
           <member name="noteChanger">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="PSlotNoteChanger" ID="111437581">
+              <obj class="PSlotNoteChanger" ID="23319327">
                 <int name="channel" value="-1" />
                 <int name="minVelocity" value="0" />
                 <int name="maxVelocity" value="127" />
@@ -198,41 +198,41 @@
           <member name="midiMessages">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="POutputEvent" ID="124453872">
+              <obj class="POutputEvent" ID="48505017">
                 <int name="status" value="144" />
-                <int name="data1" value="15" />
+                <int name="data1" value="19" />
                 <int name="data2" value="120" />
               </obj>
             </list>
           </member>
         </obj>
         <member name="name">
-          <string name="s" value="Finger - Index" wide="true" />
+          <string name="s" value="Always Down" wide="true" />
         </member>
         <member name="sv">
           <int name="ownership" value="2" />
           <list name="obj" type="obj">
-            <obj class="USlotVisuals" ID="130894608">
+            <obj class="USlotVisuals" ID="122611469">
               <int name="displaytype" value="1" />
               <int name="articulationtype" value="1" />
               <int name="symbol" value="0" />
               <int name="group" value="0" />
-              <string name="text" value="Finger - Index" wide="true" />
-              <string name="description" value="Finger - Index" wide="true" />
+              <string name="text" value="Always Down" wide="true" />
+              <string name="description" value="Always Down" wide="true" />
             </obj>
           </list>
         </member>
         <member name="name">
-          <string name="s" value="Finger - Index" wide="true" />
+          <string name="s" value="Always Down" wide="true" />
         </member>
       </obj>
-      <obj class="PSoundSlot" ID="131468648">
+      <obj class="PSoundSlot" ID="127967420">
         <int name="color" value="1" />
-        <obj class="PSlotThruTrigger" name="remote" ID="90765228">
+        <obj class="PSlotThruTrigger" name="remote" ID="124529794">
           <int name="status" value="144" />
           <int name="data1" value="-1" />
         </obj>
-        <obj class="PSlotMidiAction" name="action" ID="72901205">
+        <obj class="PSlotMidiAction" name="action" ID="58451507">
           <int name="version" value="600" />
           <int name="channel" value="-1" />
           <int name="minVelocity" value="0" />
@@ -246,7 +246,7 @@
           <member name="noteChanger">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="PSlotNoteChanger" ID="39944264">
+              <obj class="PSlotNoteChanger" ID="51625099">
                 <int name="channel" value="-1" />
                 <int name="minVelocity" value="0" />
                 <int name="maxVelocity" value="127" />
@@ -261,32 +261,32 @@
           <member name="midiMessages">
             <int name="ownership" value="1" />
             <list name="obj" type="obj">
-              <obj class="POutputEvent" ID="62877459">
+              <obj class="POutputEvent" ID="63696542">
                 <int name="status" value="144" />
-                <int name="data1" value="16" />
+                <int name="data1" value="20" />
                 <int name="data2" value="120" />
               </obj>
             </list>
           </member>
         </obj>
         <member name="name">
-          <string name="s" value="Finger - Middle" wide="true" />
+          <string name="s" value="Always Up" wide="true" />
         </member>
         <member name="sv">
           <int name="ownership" value="2" />
           <list name="obj" type="obj">
-            <obj class="USlotVisuals" ID="45380362">
+            <obj class="USlotVisuals" ID="43073163">
               <int name="displaytype" value="1" />
               <int name="articulationtype" value="1" />
               <int name="symbol" value="0" />
               <int name="group" value="0" />
-              <string name="text" value="Finger - Middle" wide="true" />
-              <string name="description" value="Finger - Middle" wide="true" />
+              <string name="text" value="Always Up" wide="true" />
+              <string name="description" value="Always Up" wide="true" />
             </obj>
           </list>
         </member>
         <member name="name">
-          <string name="s" value="Finger - Middle" wide="true" />
+          <string name="s" value="Always Up" wide="true" />
         </member>
       </obj>
     </list>
