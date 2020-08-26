@@ -1,8 +1,6 @@
 @echo off
 
-rem You can download from https://github.com/r-koubou/XLS2ExpressionMap/releases
-for %%i in (*.xlsx) do (
-    call XLS2Expressionmap.bat "%%i"
-)
+rem You can download from https://github.com/r-koubou/ArticulationUtility/releases
+SpreadsheetToExpressionMap.exe *.xlsx
 
 move /Y *.expressionmap ..\
