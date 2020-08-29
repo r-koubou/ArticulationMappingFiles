@@ -7,7 +7,7 @@
 
 ### スプレッドシートを編集する
 
-xlsフォルダ内の Template.xlsx を任意のファイル名に設定し、スプレッドシートが編集可能なソフトを使って記述をします。
+SpreadSheetsフォルダ内の Template.xlsx を任意のファイル名に設定し、スプレッドシートが編集可能なソフトを使って記述をします。
 主に以下のアプリケーションで編集可能です。
 
 - Microsoft Excel
@@ -17,11 +17,11 @@ xlsフォルダ内の Template.xlsx を任意のファイル名に設定し、�
 ### 変換する
 
 別途拙作のツールが必要で、以下のURLで公開しています。
-[https://github.com/r-koubou/XLS2ExpressionMap/releases](https://github.com/r-koubou/XLS2ExpressionMap/releases)
+[https://github.com/r-koubou/ArticulationUtility](https://github.com/r-koubou/ArticulationUtility)
 
-環境変数PATHにコマンド(`XLS2Expressionmap.bat`)を追加していれば expressionmap ファイルがこのファイルのがあるフォルダに作成されるはずです。
 
-## このテンプレートのライセンス
+
+## テンプレートのライセンス
 
 MIT License
 
