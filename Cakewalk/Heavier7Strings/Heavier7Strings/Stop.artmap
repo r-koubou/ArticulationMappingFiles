@@ -1,0 +1,88 @@
+﻿{
+  "ArticulationMaps": [
+    {
+      "name": "Heavier7Strings",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Stop"
+        }
+      ],
+      "articulations": [
+        {
+          "id": 1,
+          "name": "IDLE",
+          "index": 0,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [],
+          "transforms": []
+        },
+        {
+          "id": 2,
+          "name": "Stop (Slide)",
+          "index": 1,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 32,
+              "b3": 127,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 3,
+          "name": "Stop (Left Hand)",
+          "index": 2,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 32,
+              "b3": 60,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 4,
+          "name": "Stop (Right Hand)",
+          "index": 3,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 32,
+              "b3": 10,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        }
+      ]
+    }
+  ]
+}

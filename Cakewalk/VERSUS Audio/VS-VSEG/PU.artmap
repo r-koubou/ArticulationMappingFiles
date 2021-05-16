@@ -1,0 +1,88 @@
+﻿{
+  "ArticulationMaps": [
+    {
+      "name": "VS-VSEG",
+      "groups": [
+        {
+          "id": 1,
+          "name": "PU"
+        }
+      ],
+      "articulations": [
+        {
+          "id": 1,
+          "name": "IDLE",
+          "index": 0,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [],
+          "transforms": []
+        },
+        {
+          "id": 2,
+          "name": "Rear",
+          "index": 1,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 108,
+              "b3": 120,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 3,
+          "name": "Rear+Front",
+          "index": 2,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 109,
+              "b3": 120,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 4,
+          "name": "Front",
+          "index": 3,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 110,
+              "b3": 120,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        }
+      ]
+    }
+  ]
+}

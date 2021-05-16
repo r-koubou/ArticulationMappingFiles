@@ -1,12 +1,18 @@
 ## Articulation Mapping files 
 
+DAW毎にあるキースイッチ機能の定義ファイルを公開しています。
+
+## 対応フォーマット
+
 以下のファイル形式に対応しています。
 
 - Cubase / Nuendo
     - VST Expression map (*.expressionmap)
-- Studio One 5
-    - Key Switch file (*.keyswitch)
-        - 自作のツールでVSTエクスプレッションマップから自動変換を行っています。MIDI CCを使用している一部ファイルは対応していない場合があります。
+- Studio One 5.2~
+    - Sound Variation file (*.keyswitch)
+- Cakewalk
+    - Articulation map file (*.artmap)
+
 
 ## Studio One 5 ユーザーの方へ
 
@@ -15,21 +21,16 @@
 - Windows: `C:\Users\<USERNAME>\Documents\Studio One\Presets\User Presets\Key Switches`
 - Mac: `/Users/<USERNAME>/Documents/Studio One/Presets/User Presets\Key Switches`
 
-もしファイルが認識されない場合、DAWを起動した状態で、エクスプローラやFinder上でファイルをダブルクリックすることで認識します。（Windows版のStudio One 5 で確認済み）
-
 ## これらのファイルは...
 
-- 自作
+- 自作のツールでDAW毎のファイルを生成しています。
 - オフィシャルサイトのミラーリング (**NOTICE** ファイル参照)
 - オフィシャルサイトで過去に配布していたファイル (**NOTICE** ファイル参照)
 
-    
+## 生成ツールについて
 
-## 簡単にDAW間で変換できます
-
-変換ツールを作成しました。
-
-興味があれば [こちら](https://github.com/r-koubou/ArticulationUtility) からダウンロードすることが可能です
+- 興味があれば [こちら](https://github.com/r-koubou/KeySwitchManager) からダウンロード、キースイッチのデータベースファイル（KeySwitches.db）を編集することが可能です。
+- シェルスクリプト `export-all.sh ` を実行することで再生成が可能です。
 
 ### ライセンス
 

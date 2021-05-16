@@ -1,0 +1,88 @@
+﻿{
+  "ArticulationMaps": [
+    {
+      "name": "Heavier7Strings",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Muting CC1"
+        }
+      ],
+      "articulations": [
+        {
+          "id": 1,
+          "name": "IDLE",
+          "index": 0,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [],
+          "transforms": []
+        },
+        {
+          "id": 2,
+          "name": "Normal Play",
+          "index": 1,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 176,
+              "b2": 1,
+              "b3": 1,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 3,
+          "name": "Palm muting",
+          "index": 2,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 176,
+              "b2": 1,
+              "b3": 38,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 4,
+          "name": "Picking noise",
+          "index": 3,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 176,
+              "b2": 1,
+              "b3": 80,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        }
+      ]
+    }
+  ]
+}
