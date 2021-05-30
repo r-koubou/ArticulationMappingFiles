@@ -32,7 +32,7 @@ You will probably have the following folder, so put the file down after you down
 ## About the generation tool
 
 - If you are interested, download from [HERE](https://github.com/r-koubou/KeySwitchManager) and It is possible to edit the keyswitch database file (KeySwitches.db).
-- You can regenerate it by running the shell script `export-all.sh `.
+- You can regenerate it by running the shell script `export.sh ` in `_Database` directory.
 
 ### License
 
