@@ -1,4 +1,4 @@
-## Articulation Mapping files 
+## Articulation Mapping files
 
 DAW毎にあるキースイッチ機能の定義ファイルを公開しています。
 
@@ -30,7 +30,6 @@ DAW毎にあるキースイッチ機能の定義ファイルを公開してい�
 ## 生成ツールについて
 
 - 興味があれば [こちら](https://github.com/r-koubou/KeySwitchManager) からダウンロード、キースイッチのデータベースファイル（KeySwitches.db）を編集することが可能です。
-- `_Database`ディレクトリ内のシェルスクリプト `export.sh ` を実行することで再生成が可能です。
 
 ### ライセンス
 
