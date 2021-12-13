@@ -1,0 +1,46 @@
+﻿{
+  "ArticulationMaps": [
+    {
+      "name": "KMG7 Advanced",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Auto String Noise"
+        }
+      ],
+      "articulations": [
+        {
+          "id": 1,
+          "name": "IDLE",
+          "index": 0,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [],
+          "transforms": []
+        },
+        {
+          "id": 2,
+          "name": "Auto String Noise",
+          "index": 1,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 25,
+              "b3": 120,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        }
+      ]
+    }
+  ]
+}
