@@ -1,4 +1,4 @@
-## Articulation Mapping files
+# Articulation Mapping files
 
 DAW毎にあるキースイッチ機能の定義ファイルを公開しています。
 
