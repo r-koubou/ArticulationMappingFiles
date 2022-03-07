@@ -23,6 +23,10 @@ You will probably have the following folder, so put the file down after you down
 - Windows: `C:\Users\<USERNAME>\Documents\Studio One\Presets\User Presets\Key Switches`
 - Mac: `/Users/<USERNAME>/Documents/Studio One/Presets/User Presets\Key Switches`
 
+And regenerate the index of the presets.
+
+![](README.Resources/s1_reload_en.png)
+
 ## These files are...
 
 - I use a homemade tool to generate files for each DAW.
