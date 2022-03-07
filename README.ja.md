@@ -21,6 +21,10 @@ DAW毎にあるキースイッチ機能の定義ファイルを公開してい�
 - Windows: `C:\Users\<USERNAME>\Documents\Studio One\Presets\User Presets\Key Switches`
 - Mac: `/Users/<USERNAME>/Documents/Studio One/Presets/User Presets\Key Switches`
 
+その後、プリセットの索引を再生成してください。
+
+![](README.Resources/s1_reload_ja.png)
+
 ## これらのファイルは...
 
 - 自作のツールでDAW毎のファイルを生成しています。
