@@ -13012,32 +13012,6 @@
       ProgramChange: []
     ExtraData: {}
   ExtraData: {}
-- Id: 35372a9e-ca68-4284-9e39-66aa10563a9e
-  Author: Author
-  Description: Description
-  DeveloperName: Developer Name
-  ProductName: Product name
-  InstrumentName: Instrument name
-  Articulations:
-  - Name: name
-    MidiMessage:
-      NoteOn:
-      - Channel: 0
-        Note: C-2
-        Velocity: 100
-      ControlChange:
-      - Channel: 0
-        ControlNumber: 1
-        Data: 100
-      ProgramChange:
-      - Channel: 0
-        ProgramNumber: 34
-    ExtraData:
-      extra1 key: extra1 value
-      extra2 key: extra2 value
-  ExtraData:
-    extra1 key: extra1 value
-    extra2 key: extra2 value
 - Id: bf1dba2e-a7ed-be04-9c6f-5c921ce58717
   Author: R-Koubou
   Description: Frank The Smith - FTS Edge Bass
@@ -20206,6 +20180,610 @@
       - Channel: 0
         Note: D1
         Velocity: 120
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  ExtraData: {}
+- Id: c0f802d9-b9a3-42e9-8648-76a95292159a
+  Author: R-Koubou
+  Description: SC Electric Guitar 2
+  DeveloperName: Prominy
+  ProductName: SC Electric Guitar 2
+  InstrumentName: Main
+  Articulations:
+  - Name: '##### single note'
+    MidiMessage:
+      NoteOn: []
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: legato slide
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 1
+      ProgramChange: []
+    ExtraData: {}
+  - Name: hamm&pull/trill
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 2
+      ProgramChange: []
+    ExtraData: {}
+  - Name: no legato
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 3
+      ProgramChange: []
+    ExtraData: {}
+  - Name: picking tremolo
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 4
+      ProgramChange: []
+    ExtraData: {}
+  - Name: whole step trill
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 5
+      ProgramChange: []
+    ExtraData: {}
+  - Name: half step trill
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 6
+      ProgramChange: []
+    ExtraData: {}
+  - Name: pick stop noise
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 7
+      ProgramChange: []
+    ExtraData: {}
+  - Name: half step bend
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 8
+      ProgramChange: []
+    ExtraData: {}
+  - Name: whole step bend
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 9
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 1.5 step bend
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 10
+      ProgramChange: []
+    ExtraData: {}
+  - Name: whole step bend + vibrato
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 0
+      - Channel: 0
+        ControlNumber: 31
+        Data: 11
+      ProgramChange: []
+    ExtraData: {}
+  - Name: '##### 2-strings dyad chords'
+    MidiMessage:
+      NoteOn: []
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: minor2nd
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 1
+      ProgramChange: []
+    ExtraData: {}
+  - Name: major2nd
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 2
+      ProgramChange: []
+    ExtraData: {}
+  - Name: minor3rd-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 3
+      ProgramChange: []
+    ExtraData: {}
+  - Name: major3rd-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 4
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 4th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 5
+      ProgramChange: []
+    ExtraData: {}
+  - Name: flat5th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 6
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 5th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 7
+      ProgramChange: []
+    ExtraData: {}
+  - Name: '#5th-dyad'
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 8
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 6th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 9
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 7th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 10
+      ProgramChange: []
+    ExtraData: {}
+  - Name: maj7th-dyad
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 11
+      ProgramChange: []
+    ExtraData: {}
+  - Name: octave
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 1
+      - Channel: 0
+        ControlNumber: 31
+        Data: 12
+      ProgramChange: []
+    ExtraData: {}
+  - Name: '##### chord'
+    MidiMessage:
+      NoteOn: []
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: major
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 1
+      ProgramChange: []
+    ExtraData: {}
+  - Name: minor
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 2
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 7th
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 3
+      ProgramChange: []
+    ExtraData: {}
+  - Name: m7
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 4
+      ProgramChange: []
+    ExtraData: {}
+  - Name: maj7
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 5
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 9th
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 6
+      ProgramChange: []
+    ExtraData: {}
+  - Name: m7(9)
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 7
+      ProgramChange: []
+    ExtraData: {}
+  - Name: maj9
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 8
+      ProgramChange: []
+    ExtraData: {}
+  - Name: add9
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 9
+      ProgramChange: []
+    ExtraData: {}
+  - Name: sus4
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 10
+      ProgramChange: []
+    ExtraData: {}
+  - Name: dim7
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 11
+      ProgramChange: []
+    ExtraData: {}
+  - Name: aug
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 12
+      ProgramChange: []
+    ExtraData: {}
+  - Name: rush
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 13
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 7th (flat5)
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 14
+      ProgramChange: []
+    ExtraData: {}
+  - Name: m7 (flat5)
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 15
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 7th (#5)
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 16
+      ProgramChange: []
+    ExtraData: {}
+  - Name: 6th
+    MidiMessage:
+      NoteOn: []
+      ControlChange:
+      - Channel: 0
+        ControlNumber: 45
+        Data: 2
+      - Channel: 0
+        ControlNumber: 31
+        Data: 17
+      ProgramChange: []
+    ExtraData: {}
+  ExtraData: {}
+- Id: e0c8ffe7-800a-409e-960c-5ef359c0132b
+  Author: R-Koubou
+  Description: SC Electric Guitar 2
+  DeveloperName: Prominy
+  ProductName: SC Electric Guitar 2
+  InstrumentName: Stop
+  Articulations:
+  - Name: Stop 2
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: A1
+        Velocity: 100
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 1)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 1
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 16)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 16
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 32)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 32
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 48)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 48
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 64)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 64
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 80)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 80
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 96)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 96
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 112)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 112
+      ControlChange: []
+      ProgramChange: []
+    ExtraData: {}
+  - Name: Stop 1(Vel 127)
+    MidiMessage:
+      NoteOn:
+      - Channel: 0
+        Note: G#1
+        Velocity: 127
       ControlChange: []
       ProgramChange: []
     ExtraData: {}
