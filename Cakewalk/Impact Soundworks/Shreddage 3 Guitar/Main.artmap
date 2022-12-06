@@ -42,29 +42,8 @@
         },
         {
           "id": 3,
-          "name": "Mute",
-          "index": 2,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 13,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 4,
           "name": "Staccato",
-          "index": 3,
+          "index": 2,
           "groupId": 1,
           "color": "ffff0000",
           "duration": 0,
@@ -83,8 +62,29 @@
           "transforms": []
         },
         {
+          "id": 4,
+          "name": "Power Chord",
+          "index": 3,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 13,
+              "b3": 100,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
           "id": 5,
-          "name": "Power Chord Sus",
+          "name": "Power Chord Stac",
           "index": 4,
           "groupId": 1,
           "color": "ffff0000",
@@ -105,113 +105,8 @@
         },
         {
           "id": 6,
-          "name": "Power Chord Mute",
-          "index": 5,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 16,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 7,
-          "name": "Power Chord Stac",
-          "index": 6,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 17,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 8,
           "name": "Choke",
-          "index": 7,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 18,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 9,
-          "name": "Tapping",
-          "index": 8,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 19,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 10,
-          "name": "Harmonics",
-          "index": 9,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 20,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 11,
-          "name": "Pinch Harmonics",
-          "index": 10,
+          "index": 5,
           "groupId": 1,
           "color": "ffff0000",
           "duration": 0,
@@ -230,16 +125,16 @@
           "transforms": []
         },
         {
-          "id": 12,
-          "name": "Rake",
-          "index": 11,
+          "id": 7,
+          "name": "Tapping",
+          "index": 6,
           "groupId": 1,
           "color": "ffff0000",
           "duration": 0,
           "events": [
             {
               "b1": 144,
-              "b2": 12,
+              "b2": 18,
               "b3": 100,
               "b4": 0,
               "allowTranspose": 0,
@@ -251,16 +146,37 @@
           "transforms": []
         },
         {
-          "id": 13,
+          "id": 8,
+          "name": "Harmonics",
+          "index": 7,
+          "groupId": 1,
+          "color": "ffff0000",
+          "duration": 0,
+          "events": [
+            {
+              "b1": 144,
+              "b2": 17,
+              "b3": 100,
+              "b4": 0,
+              "allowTranspose": 0,
+              "allowTransposeMidiCh": 1,
+              "triggerAt": 4,
+              "chaseMode": 2
+            }
+          ],
+          "transforms": []
+        },
+        {
+          "id": 9,
           "name": "Tremolo",
-          "index": 12,
+          "index": 8,
           "groupId": 1,
           "color": "ffff0000",
           "duration": 0,
           "events": [
             {
               "b1": 144,
-              "b2": 22,
+              "b2": 16,
               "b3": 100,
               "b4": 0,
               "allowTranspose": 0,
@@ -272,58 +188,16 @@
           "transforms": []
         },
         {
-          "id": 14,
-          "name": "FX",
-          "index": 13,
+          "id": 10,
+          "name": "Fx",
+          "index": 9,
           "groupId": 1,
           "color": "ffff0000",
           "duration": 0,
           "events": [
             {
               "b1": 144,
-              "b2": 23,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 15,
-          "name": "[LEG] Slide",
-          "index": 14,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 29,
-              "b3": 100,
-              "b4": 0,
-              "allowTranspose": 0,
-              "allowTransposeMidiCh": 1,
-              "triggerAt": 4,
-              "chaseMode": 2
-            }
-          ],
-          "transforms": []
-        },
-        {
-          "id": 16,
-          "name": "[LEG] Pwrch Slide",
-          "index": 15,
-          "groupId": 1,
-          "color": "ffff0000",
-          "duration": 0,
-          "events": [
-            {
-              "b1": 144,
-              "b2": 29,
+              "b2": 19,
               "b3": 100,
               "b4": 0,
               "allowTranspose": 0,
