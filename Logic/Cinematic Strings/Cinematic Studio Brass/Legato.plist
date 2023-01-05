@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Articulations</key>
+	<array>
+		<dict>
+			<key>ArticulationID</key>
+			<integer>1</integer>
+			<key>ID</key>
+			<integer>1001</integer>
+			<key>Name</key>
+			<string>IDLE</string>
+			<key>Output</key>
+			<array>
+			</array>
+		</dict>
+		<dict>
+			<key>ArticulationID</key>
+			<integer>2</integer>
+			<key>ID</key>
+			<integer>1002</integer>
+			<key>Name</key>
+			<string>Legato - On</string>
+			<key>Output</key>
+			<array>
+				<dict>
+					<key>MB1</key>
+					<integer>34</integer>
+					<key>Status</key>
+					<string>Note On</string>
+					<key>ValueLow</key>
+					<integer>64</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ArticulationID</key>
+			<integer>3</integer>
+			<key>ID</key>
+			<integer>1003</integer>
+			<key>Name</key>
+			<string>Legato - Off</string>
+			<key>Output</key>
+			<array>
+				<dict>
+					<key>MB1</key>
+					<integer>34</integer>
+					<key>Status</key>
+					<string>Note On</string>
+					<key>ValueLow</key>
+					<integer>127</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ArticulationID</key>
+			<integer>4</integer>
+			<key>ID</key>
+			<integer>1004</integer>
+			<key>Name</key>
+			<string>Legato - On (Ens)</string>
+			<key>Output</key>
+			<array>
+				<dict>
+					<key>MB1</key>
+					<integer>22</integer>
+					<key>Status</key>
+					<string>Note On</string>
+					<key>ValueLow</key>
+					<integer>64</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ArticulationID</key>
+			<integer>5</integer>
+			<key>ID</key>
+			<integer>1005</integer>
+			<key>Name</key>
+			<string>Legato - Off (Ens)</string>
+			<key>Output</key>
+			<array>
+				<dict>
+					<key>MB1</key>
+					<integer>22</integer>
+					<key>Status</key>
+					<string>Note On</string>
+					<key>ValueLow</key>
+					<integer>127</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Name</key>
+	<string>Legato.plist</string>
+</dict>
+</plist>
