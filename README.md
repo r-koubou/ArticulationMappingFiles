@@ -16,7 +16,7 @@ Following files format supporting.
     - Articulation map file (*.artmap)
 
 
-## For Studio One 5 Users
+## For Studio One Users
 
 You will probably have the following folder, so put the file down after you download it.
 
