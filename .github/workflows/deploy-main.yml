@@ -1,0 +1,17 @@
+name: Deploy SSG Page (main)
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**/README.md'
+      - LICENSE
+      - .github/FUNDING.yml
+      - renovate.json
+      - pages-local-check.sh
+jobs:
+  deploy-ssg-page-main:
+    uses: ./.github/workflows/deploy-page.yml
+    secrets: inherit
+    with:
+      deploy: true

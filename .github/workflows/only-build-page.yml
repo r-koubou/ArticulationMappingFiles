@@ -1,0 +1,19 @@
+name: Build SSG Page
+on:
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - develop
+      - feature/**
+      - fix/**
+      - refactor/**
+
+jobs:
+  build-ssg-page:
+    uses: ./.github/workflows/deploy-page.yml
+    secrets: inherit
+    with:
+      deploy: false

@@ -1,0 +1,167 @@
+name: Deploy SSG Page
+on:
+  workflow_call:
+    inputs:
+      deploy:
+        type: boolean
+        required: true
+        default: false
+
+  workflow_dispatch:
+    inputs:
+      deploy:
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  deploy-ssg-page:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+       TZ: 'Asia/Tokyo'
+       ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
+       ARTICLUSTER_OUTPUT: ${{ github.workspace }}/mkdocs/docs/assets/converted
+
+    steps:
+    #----------------------------------------------------------
+    # Checkout repository
+    #----------------------------------------------------------
+    - name: Checkout
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+    #----------------------------------------------------------
+    # Setup .NET SDK
+    #----------------------------------------------------------
+    - name: Install .NET SDK
+      uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+      with:
+        dotnet-version: ${{ vars.DOTNET_SDK_VERSION }}
+
+    #----------------------------------------------------------
+    # Setup dependency build tools from .prototools
+    #----------------------------------------------------------
+    - name: Setup Dependency Build Tools from .prototools
+      uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
+      with:
+        auto-install: true
+
+    #----------------------------------------------------------
+    # Convert articluster-files/
+    #----------------------------------------------------------
+    - name: Convert articluster-files
+      run: |
+        dotnet tool exec -y ArtiCluster convert ${ARTICLUSTER_INPUT} ${ARTICLUSTER_OUTPUT}
+
+    #----------------------------------------------------------
+    # Generate mkdocs page
+    #----------------------------------------------------------
+    - name: Generate mkdocs page
+      run: |
+        pushd mkdocs-tools/markdown-gen
+          uv sync
+          uv run python ./main.py
+        popd
+
+    #----------------------------------------------------------
+    # Replace build information in mkdocs page
+    #----------------------------------------------------------
+    - name: Replace build information in mkdocs page (index.md)
+      run: |
+        BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%S+09:00")
+        VERSION=${{ github.ref_name }}@${{ github.sha }}
+        sed -i "s?##VERSION##?${VERSION}?g" mkdocs/docs/index.md
+        sed -i "s?##BUILD_DATE##?${BUILD_DATE}?g" mkdocs/docs/index.md
+
+        {
+          echo "## Build Information";
+          echo ""
+          echo "|name|value|"
+          echo "|----|-----|"
+          echo "|Version|${VERSION}|"
+          echo "|Build Date|${BUILD_DATE}|"
+        } >> $GITHUB_STEP_SUMMARY
+
+    #----------------------------------------------------------
+    # Build mkdocs page
+    #----------------------------------------------------------
+    - name: Build mkdocs page
+      run: |
+        pushd mkdocs
+          uvx mkdocs build
+        popd
+
+    #----------------------------------------------------------
+    # Upload mkdocs page artifact
+    #----------------------------------------------------------
+    - name: Upload mkdocs page artifact
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      with:
+        name: mkdocs-page-${{ github.sha }}
+        path: mkdocs/site
+
+    #----------------------------------------------------------
+    # Upload ArtiCluster converted data artifact
+    #----------------------------------------------------------
+    - name: Upload ArtiCluster converted data artifact
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      with:
+        name: all-files
+        path: ${{ env.ARTICLUSTER_OUTPUT }}
+
+    #----------------------------------------------------------
+    # Add git tag for release
+    #----------------------------------------------------------
+    - name: Add git tag for release
+      if: ${{ inputs.deploy == true && github.ref_name == 'main' }}
+      run: |
+        DATE=$(date +"%Y%m%d")
+        SHORT_SHA=$(git rev-parse --short HEAD)
+        TAG_NAME=ver-${DATE}-${SHORT_SHA} >> $GITHUB_ENV
+
+        echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
+        echo "TAG_NAME=ver-${DATE}-${SHORT_SHA}" >> $GITHUB_ENV
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
+        git push origin "${TAG_NAME}"
+
+    #----------------------------------------------------------
+    # Create Assets for GitHub Release
+    #----------------------------------------------------------
+    - name: Create Assets for GitHub Release
+      if: ${{ inputs.deploy == true && github.ref_name == 'main' }}
+      run: |
+        ALL_CONVERTED_FILES_ZIP=all-converted-files-${SHORT_SHA}.zip
+        echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
+        mkdir -p all-converted-files
+        cp -r ${ARTICLUSTER_OUTPUT}/* all-converted-files/
+        zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files
+
+    #----------------------------------------------------------
+    # Create GitHub Release
+    #----------------------------------------------------------
+    - name: Create GitHub Release
+      if: ${{ inputs.deploy == true && github.ref_name == 'main' }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+        ALL_CONVERTED_FILES_ZIP: ${{ env.ALL_CONVERTED_FILES_ZIP }}
+      run: |
+        gh release \
+          create "${TAG_NAME}" \
+          --repo "${{ github.repository }}" \
+          --title "${TAG_NAME}" \
+          --latest --generate-notes \
+          ${ALL_CONVERTED_FILES_ZIP}
+
+    #----------------------------------------------------------
+    # Deploy mkdocs page to GitHub Pages
+    #----------------------------------------------------------
+    - name: Deploy mkdocs page to GitHub Pages
+      if: ${{ inputs.deploy == true }}
+      run: |
+        pushd mkdocs
+          uvx mkdocs gh-deploy --force
+        popd
