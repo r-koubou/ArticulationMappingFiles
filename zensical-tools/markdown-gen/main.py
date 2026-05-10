@@ -11,8 +11,8 @@ def join_path(*args) -> str:
 
 THIS_FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-SOURCE_DIR = join_path(THIS_FILE_DIR, "..", "..", "mkdocs", "docs", "assets", "converted")
-OUTPUT_DIR = join_path(THIS_FILE_DIR, "..", "..", "mkdocs", "docs")
+SOURCE_DIR = join_path(THIS_FILE_DIR, "..", "..", "zensical", "docs", "assets", "converted")
+OUTPUT_DIR = join_path(THIS_FILE_DIR, "..", "..", "zensical", "docs")
 
 
 def main():

@@ -1,25 +1,23 @@
-name: Deploy SSG Page
+name: Build SSG Page
 on:
-  push:
+  pull_request:
     branches:
       - main
-    paths-ignore:
-      - '**/README.md'
-      - LICENSE
-      - .github/FUNDING.yml
-      - renovate.json
-      - pages-local-check.sh
+
+  push:
+    branches:
+      - develop
+      - feature/**
+      - fix/**
+      - refactor/**
+
+  workflow_dispatch:
 
 jobs:
-  deploy-ssg-page:
+  build-ssg-page:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     env:
        TZ: 'Asia/Tokyo'
        ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
@@ -31,12 +29,6 @@ jobs:
     #----------------------------------------------------------
     - name: Checkout
       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-
-    #----------------------------------------------------------
-    # Configure GitHub Pages
-    #----------------------------------------------------------
-    - name: Configure GitHub Pages
-      uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
     #----------------------------------------------------------
     # Setup .NET SDK
@@ -100,6 +92,15 @@ jobs:
         popd
 
     #----------------------------------------------------------
+    # Upload zensical page artifact
+    #----------------------------------------------------------
+    - name: Upload zensical page artifact
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      with:
+        name: zensical-page-${{ github.sha }}
+        path: zensical/site
+
+    #----------------------------------------------------------
     # Upload ArtiCluster converted data artifact
     #----------------------------------------------------------
     - name: Upload ArtiCluster converted data artifact
@@ -107,61 +108,3 @@ jobs:
       with:
         name: all-files
         path: ${{ env.ARTICLUSTER_OUTPUT }}
-
-    #----------------------------------------------------------
-    # Add git tag for release
-    #----------------------------------------------------------
-    - name: Add git tag for release
-      run: |
-        DATE=$(date +"%Y%m%d")
-        SHORT_SHA=$(git rev-parse --short HEAD)
-        TAG_NAME=ver-${DATE}-${SHORT_SHA} >> $GITHUB_ENV
-
-        echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
-        echo "TAG_NAME=ver-${DATE}-${SHORT_SHA}" >> $GITHUB_ENV
-
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@users.noreply.github.com"
-        git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
-        git push origin "${TAG_NAME}"
-
-    #----------------------------------------------------------
-    # Create Assets for GitHub Release
-    #----------------------------------------------------------
-    - name: Create Assets for GitHub Release
-      run: |
-        ALL_CONVERTED_FILES_ZIP=all-converted-files-${SHORT_SHA}.zip
-        echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
-        mkdir -p all-converted-files
-        cp -r ${ARTICLUSTER_OUTPUT}/* all-converted-files/
-        zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files
-
-    #----------------------------------------------------------
-    # Create GitHub Release
-    #----------------------------------------------------------
-    - name: Create GitHub Release
-      env:
-        GH_TOKEN: ${{ github.token }}
-        ALL_CONVERTED_FILES_ZIP: ${{ env.ALL_CONVERTED_FILES_ZIP }}
-      run: |
-        gh release \
-          create "${TAG_NAME}" \
-          --repo "${{ github.repository }}" \
-          --title "${TAG_NAME}" \
-          --latest --generate-notes \
-          ${ALL_CONVERTED_FILES_ZIP}
-
-    #----------------------------------------------------------
-    # Upload GitHub Pages artifact
-    #----------------------------------------------------------
-    - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v6.0.0
-      with:
-        path: zensical/site
-
-    #----------------------------------------------------------
-    # Deploy zensical page to GitHub Pages
-    #----------------------------------------------------------
-    - name: Deploy zensical page to GitHub Pages
-      uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
-      id: deployment
