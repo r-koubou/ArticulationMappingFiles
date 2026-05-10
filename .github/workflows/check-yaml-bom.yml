@@ -1,0 +1,29 @@
+name: Check YAML BOM
+
+on:
+  pull_request:
+
+jobs:
+  check-yaml-bom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Check UTF-8 BOM in YAML files
+        shell: bash
+        run: |
+          found=0
+
+          while IFS= read -r -d '' file; do
+            if head -c 3 "$file" | grep -q $'^\xEF\xBB\xBF'; then
+              echo "::error file=$file::UTF-8 BOM detected. Save this YAML file as UTF-8 without BOM."
+              found=1
+            fi
+          done < <(find . \
+            -type f \
+            \( -name '*.yml' -o -name '*.yaml' \) \
+            -not -path './.git/*' \
+            -print0)
+
+          exit "$found"
