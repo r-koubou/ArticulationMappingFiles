@@ -11,6 +11,7 @@ on:
       - fix/**
       - refactor/**
 
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -97,7 +98,7 @@ jobs:
     - name: Upload zensical page artifact
       uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
       with:
-        name: zensical-page-${{ github.sha }}
+        name: page-files
         path: zensical/site
 
     #----------------------------------------------------------
@@ -106,5 +107,5 @@ jobs:
     - name: Upload ArtiCluster converted data artifact
       uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
       with:
-        name: all-files
+        name: all-converted-files
         path: ${{ env.ARTICLUSTER_OUTPUT }}

@@ -11,7 +11,12 @@ on:
       - pages-local-check.sh
 
 jobs:
+  build-ssg-page:
+    uses: ./.github/workflows/build-ssg.yml
+    secrets: inherit
+
   deploy-ssg-page:
+    needs: build-ssg-page
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,8 +27,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     env:
        TZ: 'Asia/Tokyo'
-       ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
-       ARTICLUSTER_OUTPUT: ${{ github.workspace }}/zensical/docs/assets/converted
+       SSG_PAGE_DIR: .work/gh-pages
+       ARTICLUSTER_CONVERTED_DIR: .work/articluster-converted
 
     steps:
     #----------------------------------------------------------
@@ -39,117 +44,13 @@ jobs:
       uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
     #----------------------------------------------------------
-    # Setup .NET SDK
+    # Download SSG page artifact
     #----------------------------------------------------------
-    - name: Install .NET SDK
-      uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+    - name: Download SSG page artifact
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
       with:
-        dotnet-version: ${{ vars.DOTNET_SDK_VERSION }}
-
-    #----------------------------------------------------------
-    # Setup dependency build tools from .prototools
-    #----------------------------------------------------------
-    - name: Setup Dependency Build Tools from .prototools
-      uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
-      with:
-        auto-install: true
-
-    #----------------------------------------------------------
-    # Convert articluster-files/
-    #----------------------------------------------------------
-    - name: Convert articluster-files
-      run: |
-        dotnet tool exec -y ArtiCluster convert ${ARTICLUSTER_INPUT} ${ARTICLUSTER_OUTPUT}
-
-    #----------------------------------------------------------
-    # Generate zensical page
-    #----------------------------------------------------------
-    - name: Generate zensical page
-      run: |
-        pushd zensical-tools/markdown-gen
-          uv sync
-          uv run python ./main.py
-        popd
-
-    #----------------------------------------------------------
-    # Replace build information in zensical page
-    #----------------------------------------------------------
-    - name: Replace build information in zensical page (index.md)
-      run: |
-        BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%S+09:00")
-        VERSION=${{ github.ref_name }}@${{ github.sha }}
-        sed -i "s?##VERSION##?${VERSION}?g" zensical/docs/index.md
-        sed -i "s?##BUILD_DATE##?${BUILD_DATE}?g" zensical/docs/index.md
-
-        {
-          echo "## Build Information";
-          echo ""
-          echo "|name|value|"
-          echo "|----|-----|"
-          echo "|Version|${VERSION}|"
-          echo "|Build Date|${BUILD_DATE}|"
-        } >> $GITHUB_STEP_SUMMARY
-
-    #----------------------------------------------------------
-    # Build zensical page
-    #----------------------------------------------------------
-    - name: Build zensical page
-      run: |
-        pushd zensical
-          uvx zensical build --clean
-        popd
-
-    #----------------------------------------------------------
-    # Upload ArtiCluster converted data artifact
-    #----------------------------------------------------------
-    - name: Upload ArtiCluster converted data artifact
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-      with:
-        name: all-files
-        path: ${{ env.ARTICLUSTER_OUTPUT }}
-
-    #----------------------------------------------------------
-    # Add git tag for release
-    #----------------------------------------------------------
-    - name: Add git tag for release
-      run: |
-        DATE=$(date +"%Y%m%d")
-        SHORT_SHA=$(git rev-parse --short HEAD)
-        TAG_NAME=ver-${DATE}-${SHORT_SHA} >> $GITHUB_ENV
-
-        echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
-        echo "TAG_NAME=ver-${DATE}-${SHORT_SHA}" >> $GITHUB_ENV
-
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@users.noreply.github.com"
-        git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
-        git push origin "${TAG_NAME}"
-
-    #----------------------------------------------------------
-    # Create Assets for GitHub Release
-    #----------------------------------------------------------
-    - name: Create Assets for GitHub Release
-      run: |
-        ALL_CONVERTED_FILES_ZIP=all-converted-files-${SHORT_SHA}.zip
-        echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
-        mkdir -p all-converted-files
-        cp -r ${ARTICLUSTER_OUTPUT}/* all-converted-files/
-        zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files
-
-    #----------------------------------------------------------
-    # Create GitHub Release
-    #----------------------------------------------------------
-    - name: Create GitHub Release
-      env:
-        GH_TOKEN: ${{ github.token }}
-        ALL_CONVERTED_FILES_ZIP: ${{ env.ALL_CONVERTED_FILES_ZIP }}
-      run: |
-        gh release \
-          create "${TAG_NAME}" \
-          --repo "${{ github.repository }}" \
-          --title "${TAG_NAME}" \
-          --latest --generate-notes \
-          ${ALL_CONVERTED_FILES_ZIP}
+        name: page-files
+        path: ${{ env.SSG_PAGE_DIR }}
 
     #----------------------------------------------------------
     # Upload GitHub Pages artifact
@@ -157,7 +58,7 @@ jobs:
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v6.0.0
       with:
-        path: zensical/site
+        path: ${{ env.SSG_PAGE_DIR }}
 
     #----------------------------------------------------------
     # Deploy zensical page to GitHub Pages
@@ -165,3 +66,57 @@ jobs:
     - name: Deploy zensical page to GitHub Pages
       uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
       id: deployment
+
+    #----------------------------------------------------------
+    # Download ArtiCluster converted data artifact
+    #----------------------------------------------------------
+    - name: Download ArtiCluster converted data artifact
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+      with:
+        name: all-converted-files
+        path: ${{ env.ARTICLUSTER_CONVERTED_DIR }}
+
+    #----------------------------------------------------------
+    # Create Assets for GitHub Release
+    #----------------------------------------------------------
+    - name: Create Assets for GitHub Release
+      run: |
+        DATE=$(date +"%Y%m%d")
+        SHORT_SHA=$(git rev-parse --short HEAD)
+        ALL_CONVERTED_FILES_ZIP=all-converted-files-${DATE}-${SHORT_SHA}.zip
+
+        echo "DATE=${DATE}" >> $GITHUB_ENV
+        echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
+        echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
+
+        mkdir -p all-converted-files
+        cp -r ${ARTICLUSTER_CONVERTED_DIR}/* all-converted-files/
+        zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files/
+
+    #----------------------------------------------------------
+    # Add git tag for release
+    #----------------------------------------------------------
+    - name: Add git tag for release
+      run: |
+        TAG_NAME=ver-${DATE}-${SHORT_SHA}
+
+        echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
+        git push origin "${TAG_NAME}"
+
+    #----------------------------------------------------------
+    # Create GitHub Release
+    #----------------------------------------------------------
+    - name: Create GitHub Release
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh release \
+          create "${TAG_NAME}" \
+          --repo "${{ github.repository }}" \
+          --title "${TAG_NAME}" \
+          --latest --generate-notes \
+          ${ALL_CONVERTED_FILES_ZIP}
