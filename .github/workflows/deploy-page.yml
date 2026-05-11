@@ -13,6 +13,8 @@ on:
       - renovate.json
       - pages-local-check.sh
 
+  workflow_dispatch:
+
 jobs:
   build-ssg-page:
     uses: ./.github/workflows/build-ssg.yml
