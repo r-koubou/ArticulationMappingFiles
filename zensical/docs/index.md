@@ -9,7 +9,7 @@ This site provides articulation mapping files generated from the [ArtiCluster](h
 
 Following files format supported.
 
-- Cakewalk / Sonar
+- Cakewalk Sonar
     - Articulation map file (*.artmap)
 - Cubase / Nuendo
     - VST Expression map (*.expressionmap)
@@ -49,13 +49,15 @@ See the [LICENSE in GitHub repository](https://github.com/r-koubou/ArticulationM
 
 ### Trademarks
 
-- `Cakewalk` is a trademark of [BandLab Technologies](https://www.cakewalk.com/)
-- `Sonar` is a trademark of [BandLab Technologies](https://www.cakewalk.com/)
-- `Cubase` is a trademark of [Steinberg Media Technologies GmbH.](https://www.steinberg.net/)
-- `Nuendo` is a trademark of [Steinberg Media Technologies GmbH.](https://www.steinberg.net/)
-- `Logic Pro` is a trademark of [Apple Inc.](https://www.apple.com/)
-- `Studio One` is a trademark of [PreSonus Software, Ltd.](https://presonus.com/)
-- `Studio Pro` is a trademark of [PreSonus Software, Ltd.](https://presonus.com/)
+- `macOS` is a registered trademark of [Apple Inc.](https://www.apple.com)
+- `Windows` is a registered trademark of [Microsoft Corporation](https://www.microsoft.com/)
+
+- `Cakewalk Sonar` is a registered trademark of [BandLab Technologies](https://www.cakewalk.com/)
+- `Cubase` is a registered trademark of [Steinberg Media Technologies GmbH](https://www.steinberg.net/)
+- `Nuendo` is a registered trademark of [Steinberg Media Technologies GmbH](https://www.steinberg.net/)
+- `Logic Pro` is a registered trademark of [Apple Inc.](https://www.apple.com/)
+- `Studio One` is a registered trademark of [PreSonus Audio Electronics, Inc.](https://www.presonus.com/)
+- `Studio Pro` is a registered trademark of [PreSonus Audio Electronics, Inc.](https://www.presonus.com/)
 
 ### Software
 
