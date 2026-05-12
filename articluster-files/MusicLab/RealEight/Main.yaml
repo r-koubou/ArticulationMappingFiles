@@ -1,0 +1,24 @@
+Id: 51871e21-3956-506d-2ed8-eefb80d850dd
+Author: R-Koubou
+ManufacturerName: MusicLab
+ProductName: RealEight
+PatchName: Main
+Description: MusicLab RealEight - Main
+Articulations:
+  - Name: Idle
+    MidiMessages: []
+  - Name: Default
+    MidiMessages:
+      - Status: 144
+        Data1: 11
+        Data2: 120
+  - Name: Mute
+    MidiMessages:
+      - Status: 144
+        Data1: 27
+        Data2: 120
+  - Name: BridgeMute
+    MidiMessages:
+      - Status: 144
+        Data1: 26
+        Data2: 120

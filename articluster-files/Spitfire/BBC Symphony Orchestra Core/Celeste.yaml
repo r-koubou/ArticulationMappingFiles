@@ -1,0 +1,24 @@
+Id: efc30e48-77a8-445c-973b-85232a26d98f
+Author: R-Koubou
+ManufacturerName: Spitfire
+ProductName: BBC Symphony Orchestra Core
+PatchName: Celeste
+Description: Spitfire BBC Symphony Orchestra Core - Celeste
+Articulations:
+  - Name: Idle
+    MidiMessages: []
+  - Name: Susatained
+    MidiMessages:
+      - Status: 144
+        Data1: 0
+        Data2: 100
+  - Name: Damped
+    MidiMessages:
+      - Status: 144
+        Data1: 1
+        Data2: 100
+  - Name: Damped Medium
+    MidiMessages:
+      - Status: 144
+        Data1: 2
+        Data2: 100

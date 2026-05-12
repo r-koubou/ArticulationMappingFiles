@@ -1,42 +1,40 @@
-[日本語](README.ja.md)
+Articulation Mapping Files
+==========================
 
-# Articulation Mapping files
+This repository contains source definition files for articulation mappings for various DAWs.
 
-The definition files for the keyswitch functions of each DAW are available.
+Generated files are published on the project site:
+https://r-koubou.github.io/ArticulationMappingFiles
 
-## Supported Formats
+## Download
 
-Following files format supporting.
+You can browse and download individual files from the site above.
 
-- Cubase / Nuendo
-    - VST Expression map (*.expressionmap)
-- Studio One 5.2~
-    - Sound Variation file (*.keyswitch)
-- Cakewalk
-    - Articulation map file (*.artmap)
+If you'd like to download everything as a single ZIP file, you can do so from the GitHub Releases page:
+https://github.com/r-koubou/ArticulationMappingFiles/releases/latest
 
+## About articluster-files
 
-## For Studio One Users
+The files in articluster-files are source definitions written in the `Universal Definition` format used by [ArtiCluster](https://github.com/r-koubou/articluster), which I developed.
 
-You will probably have the following folder, so put the file down after you download it.
+These source files are automatically converted by GitHub Actions into DAW-specific formats, and the generated files are then published on the project site.
 
-- Windows: `C:\Users\<USERNAME>\Documents\Studio One\Presets\User Presets\Key Switches`
-- Mac: `/Users/<USERNAME>/Documents/Studio One/Presets/User Presets\Key Switches`
+## How to convert and preview the site in a local environment
 
-And regenerate the index of the presets.
+### Requirements
 
-![](README.Resources/s1_reload_en.png)
+- [.NET 10](https://dotnet.microsoft.com/)
+- [uv](https://github.com/astral-sh/uv)
 
-## These files are...
+### Steps
 
-- I use a homemade tool to generate files for each DAW.
-- Mirror of official files (see **NOTICE** file)
-- Mirror of other user file(s) that currently cannot download from their site (see **NOTICE** file)
+1. run `pages-local-check.sh`
+2. open `http://localhost:8080` in your web browser
 
-## About the generation tool
+### Converted files location
 
-- If you are interested, download from [HERE](https://github.com/r-koubou/KeySwitchManager) and It is possible to edit the keyswitch database file (KeySwitches.db).
+- `zensical/docs/assets/converted`
 
-### License
+## Related Project
 
-MIT License
+[ArtiCluster](https://github.com/r-koubou/articluster)

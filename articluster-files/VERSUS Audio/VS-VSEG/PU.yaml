@@ -1,0 +1,24 @@
+Id: 231857ad-c780-80ca-bc01-1d59a4bcb963
+Author: R-Koubou
+ManufacturerName: VERSUS Audio
+ProductName: VS-VSEG
+PatchName: PU
+Description: VERSUS Audio VS-VSEG - PU
+Articulations:
+  - Name: Idle
+    MidiMessages: []
+  - Name: Rear
+    MidiMessages:
+      - Status: 144
+        Data1: 108
+        Data2: 120
+  - Name: Rear+Front
+    MidiMessages:
+      - Status: 144
+        Data1: 109
+        Data2: 120
+  - Name: Front
+    MidiMessages:
+      - Status: 144
+        Data1: 110
+        Data2: 120

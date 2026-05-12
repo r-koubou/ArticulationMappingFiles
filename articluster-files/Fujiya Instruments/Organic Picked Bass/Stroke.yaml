@@ -1,0 +1,24 @@
+Id: c491d76d-ac61-c377-a1e2-6006392309dd
+Author: R-Koubou
+ManufacturerName: Fujiya Instruments
+ProductName: Organic Picked Bass
+PatchName: Stroke
+Description: Fujiya Instruments Organic Picked Bass - Stroke
+Articulations:
+  - Name: Idle
+    MidiMessages: []
+  - Name: Stroke - Auto
+    MidiMessages:
+      - Status: 144
+        Data1: 14
+        Data2: 120
+  - Name: Stroke - Down
+    MidiMessages:
+      - Status: 144
+        Data1: 15
+        Data2: 120
+  - Name: Stroke - Up
+    MidiMessages:
+      - Status: 144
+        Data1: 16
+        Data2: 120

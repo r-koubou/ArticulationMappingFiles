@@ -1,0 +1,42 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices"
+  ],
+  "rangeStrategy": "auto",
+  "timezone": "Asia/Tokyo",
+    "schedule": [
+    "* 9-21 * * 6,0"
+  ],
+  "prHourlyLimit": 4,
+  "dependencyDashboard": true,
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "enabledManagers": [
+    "github-actions",
+    "pep621"
+  ],
+  "ignorePaths": [
+    "^articluster-files/**",
+    "**/zensical/**"
+  ],
+  "packageRules": [
+    {
+      "description": "Major updates are manually reviewed",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    },
+    {
+      "description": "Automerge patch and minor updates",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    }
+  ]
+}
