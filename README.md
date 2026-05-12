@@ -19,6 +19,22 @@ The files in articluster-files are source definitions written in the `Universal 
 
 These source files are automatically converted by GitHub Actions into DAW-specific formats, and the generated files are then published on the project site.
 
+## How to convert and preview the site in a local environment
+
+### Requirements
+
+- [.NET 10](https://dotnet.microsoft.com/)
+- [uv](https://github.com/astral-sh/uv)
+
+### Steps
+
+1. run `pages-local-check.sh`
+2. open `http://localhost:8080` in your web browser
+
+### Converted files location
+
+- `zensical/docs/assets/converted`
+
 ## Related Project
 
-ArtiCluster: https://github.com/r-koubou/articluster
+[ArtiCluster](https://github.com/r-koubou/articluster)
