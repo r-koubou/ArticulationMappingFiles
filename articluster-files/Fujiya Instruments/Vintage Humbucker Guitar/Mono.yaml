@@ -3,10 +3,10 @@ Id: c515b885-697d-c4fb-5efe-618a1a3b92d1
 Author: R-Koubou
 ManufacturerName: Fujiya Instruments
 ProductName: Vintage Humbucker Guitar
-PatchName: Mono (Main)
-Description: Fujiya Instruments Vintage Humbucker Guitar - Mono (Main)
+PatchName: Mono
+Description: Fujiya Instruments Vintage Humbucker Guitar - Mono
 ArticulationGroups:
-  - Name: Mono (Main)
+  - Name: Main
     Articulations:
       - Name: Idle
         MidiMessages: []
@@ -114,4 +114,105 @@ ArticulationGroups:
         MidiMessages:
           - Status: 144
             Data1: 28
+            Data2: 120
+  - Name: Stop
+    Articulations:
+      - Name: Noiseless Vel 15
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 15
+      - Name: Noiseless Vel 31
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 31
+      - Name: Noiseless Vel 47
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 47
+      - Name: Noiseless Vel 63
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 63
+      - Name: Noiseless Vel 79
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 79
+      - Name: Noiseless Vel 95
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 95
+      - Name: Noiseless Vel 111
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 111
+      - Name: Noiseless Vel 127
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 127
+      - Name: Pick Vel 15
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 15
+      - Name: Pick Vel 31
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 31
+      - Name: Pick Vel 47
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 47
+      - Name: Pick Vel 63
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 63
+      - Name: Pick Vel 79
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 79
+      - Name: Pick Vel 95
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 95
+      - Name: Pick Vel 111
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 111
+      - Name: Pick Vel 127
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 127
+  - Name: Other
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto Alternate
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: Always Down
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: Always Up
+        MidiMessages:
+          - Status: 144
+            Data1: 8
             Data2: 120
