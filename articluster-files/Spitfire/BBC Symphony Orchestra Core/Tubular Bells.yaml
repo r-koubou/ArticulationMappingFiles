@@ -5,21 +5,23 @@ ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Tubular Bells
 Description: Spitfire BBC Symphony Orchestra Core - Tubular Bells
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Hits
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Rolls
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Hits Dumped
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
+ArticulationGroups:
+  - Name: Tubular Bells
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Hits
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Rolls
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Hits Dumped
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100

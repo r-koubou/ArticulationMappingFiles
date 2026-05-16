@@ -5,26 +5,28 @@ ManufacturerName: VERSUS Audio
 ProductName: VS-VSEG
 PatchName: Switch
 Description: VERSUS Audio VS-VSEG - Switch
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Slide:On
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 120
-  - Name: Slide:Off
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 63
-  - Name: Brushing:On
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Brushing:Off
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 63
+ArticulationGroups:
+  - Name: Switch
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Slide:On
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 120
+      - Name: Slide:Off
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 63
+      - Name: Brushing:On
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Brushing:Off
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 63

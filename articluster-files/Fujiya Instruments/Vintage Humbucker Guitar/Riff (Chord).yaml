@@ -5,71 +5,73 @@ ManufacturerName: Fujiya Instruments
 ProductName: Vintage Humbucker Guitar
 PatchName: Riff (Chord)
 Description: Fujiya Instruments Vintage Humbucker Guitar - Riff (Chord)
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Single
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 120
-  - Name: Minor 2nd
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 120
-  - Name: Major 2nd
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 120
-  - Name: Minor 3rd
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 120
-  - Name: Major 3rd
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 120
-  - Name: Perfect 4th
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 120
-  - Name: Diminished 5th
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 120
-  - Name: Perfect 5th
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 120
-  - Name: Augmented 5th
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 120
-  - Name: Major 6th
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 120
-  - Name: Minor 7th
-    MidiMessages:
-      - Status: 144
-        Data1: 10
-        Data2: 120
-  - Name: Major 7th
-    MidiMessages:
-      - Status: 144
-        Data1: 11
-        Data2: 120
-  - Name: Perfect Octave
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
+ArticulationGroups:
+  - Name: Riff (Chord)
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Single
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 120
+      - Name: Minor 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 120
+      - Name: Major 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 120
+      - Name: Minor 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 120
+      - Name: Major 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 120
+      - Name: Perfect 4th
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 120
+      - Name: Diminished 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: Perfect 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: Augmented 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 120
+      - Name: Major 6th
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 120
+      - Name: Minor 7th
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 120
+      - Name: Major 7th
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 120
+      - Name: Perfect Octave
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120

@@ -5,11 +5,13 @@ ManufacturerName: Studio Major 7th
 ProductName: KMG7 Advanced
 PatchName: Auto String Noise
 Description: Studio Major 7th KMG7 Advanced - Auto String Noise
-Articulations:
-  - Name: Idle
-    MidiMessages: []
+ArticulationGroups:
   - Name: Auto String Noise
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto String Noise
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120

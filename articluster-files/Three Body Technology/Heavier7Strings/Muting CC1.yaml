@@ -5,21 +5,23 @@ ManufacturerName: Three Body Technology
 ProductName: Heavier7Strings
 PatchName: Muting CC1
 Description: Three Body Technology Heavier7Strings - Muting CC1
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Normal Play
-    MidiMessages:
-      - Status: 176
-        Data1: 1
-        Data2: 1
-  - Name: Palm muting
-    MidiMessages:
-      - Status: 176
-        Data1: 1
-        Data2: 38
-  - Name: Picking noise
-    MidiMessages:
-      - Status: 176
-        Data1: 1
-        Data2: 80
+ArticulationGroups:
+  - Name: Muting CC1
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Normal Play
+        MidiMessages:
+          - Status: 176
+            Data1: 1
+            Data2: 1
+      - Name: Palm muting
+        MidiMessages:
+          - Status: 176
+            Data1: 1
+            Data2: 38
+      - Name: Picking noise
+        MidiMessages:
+          - Status: 176
+            Data1: 1
+            Data2: 80

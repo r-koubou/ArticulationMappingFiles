@@ -5,21 +5,23 @@ ManufacturerName: Fujiya Instruments
 ProductName: Organic Fingered Bass
 PatchName: Finger
 Description: Fujiya Instruments Organic Fingered Bass - Finger
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Finger - Auto
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
-  - Name: Finger - Index
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 120
-  - Name: Finger - Middle
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
+ArticulationGroups:
+  - Name: Finger
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Finger - Auto
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Finger - Index
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120
+      - Name: Finger - Middle
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120

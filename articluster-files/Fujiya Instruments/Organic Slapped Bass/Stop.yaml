@@ -5,86 +5,88 @@ ManufacturerName: Fujiya Instruments
 ProductName: Organic Slapped Bass
 PatchName: Stop
 Description: Fujiya Instruments Organic Slapped Bass - Stop
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Slide Down (vel 31)
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 31
-  - Name: Slide Down (vel 64)
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 64
-  - Name: Slide Down (vel 96)
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 96
-  - Name: Slide Down (vel 127)
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 127
-  - Name: Left Hand Stop (vel 31)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 31
-  - Name: Left Hand Stop (vel 64)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 64
-  - Name: Left Hand Stop (vel 96)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 96
-  - Name: Left Hand Stop (vel 127)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 127
-  - Name: Noiseless Stop (vel 31)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 31
-  - Name: Noiseless Stop (vel 64)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 64
-  - Name: Noiseless Stop (vel 96)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 96
-  - Name: Noiseless Stop (vel 127)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 127
-  - Name: Mute Stop (vel 31)
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 31
-  - Name: Mute Stop (vel 64)
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 64
-  - Name: Mute Stop (vel 96)
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 96
-  - Name: Mute Stop (vel 127)
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 127
+ArticulationGroups:
+  - Name: Stop
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Slide Down (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 31
+      - Name: Slide Down (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 64
+      - Name: Slide Down (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 96
+      - Name: Slide Down (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 127
+      - Name: Left Hand Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 31
+      - Name: Left Hand Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 64
+      - Name: Left Hand Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 96
+      - Name: Left Hand Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 127
+      - Name: Noiseless Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 31
+      - Name: Noiseless Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 64
+      - Name: Noiseless Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 96
+      - Name: Noiseless Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 127
+      - Name: Mute Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 31
+      - Name: Mute Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 64
+      - Name: Mute Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 96
+      - Name: Mute Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 127

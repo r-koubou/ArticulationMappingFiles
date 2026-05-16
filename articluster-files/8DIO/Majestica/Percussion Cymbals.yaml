@@ -5,31 +5,33 @@ ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Percussion Cymbals
 Description: 8DIO Majestica - Percussion Cymbals
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: CYMBALS
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: SCRATCHES
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: TAM TAMS
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: SMALL GONGS
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: LARGE GONGS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
+ArticulationGroups:
+  - Name: Percussion Cymbals
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: CYMBALS
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: SCRATCHES
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: TAM TAMS
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: SMALL GONGS
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: LARGE GONGS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120

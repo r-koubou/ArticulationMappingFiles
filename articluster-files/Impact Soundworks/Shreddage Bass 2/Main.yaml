@@ -5,21 +5,23 @@ ManufacturerName: Impact Soundworks
 ProductName: Shreddage Bass 2
 PatchName: Main
 Description: Impact Soundworks Shreddage Bass 2 - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SUSTAIN
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: HARMONIC
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
-  - Name: FX
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SUSTAIN
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: HARMONIC
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: FX
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120

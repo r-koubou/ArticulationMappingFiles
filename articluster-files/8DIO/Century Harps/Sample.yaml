@@ -5,31 +5,33 @@ ManufacturerName: 8DIO
 ProductName: Century Harps
 PatchName: Sample
 Description: 8DIO Century Harps - Sample
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Minor
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 100
-  - Name: Major
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 100
-  - Name: Diminished
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 100
-  - Name: Augmented
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 100
-  - Name: Pentatonic
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 100
+ArticulationGroups:
+  - Name: Sample
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Minor
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 100
+      - Name: Major
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Diminished
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Augmented
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: Pentatonic
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 100

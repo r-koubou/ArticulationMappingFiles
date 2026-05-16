@@ -5,16 +5,18 @@ ManufacturerName: Fujiya Instruments
 ProductName: Organic Slapped Bass
 PatchName: Thumb
 Description: Fujiya Instruments Organic Slapped Bass - Thumb
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Pull
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
+ArticulationGroups:
   - Name: Thumb
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 120
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Pull
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Thumb
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120

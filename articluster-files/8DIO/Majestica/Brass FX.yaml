@@ -5,36 +5,38 @@ ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Brass FX
 Description: 8DIO Majestica - Brass FX
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SWOOPS / RIPS
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: BENDS UP
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: BENDS DOWN
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: SAVAGE HITS
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
-  - Name: SAVAGE PHRASES
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 120
-  - Name: BREATHES
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
+ArticulationGroups:
+  - Name: Brass FX
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SWOOPS / RIPS
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: BENDS UP
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: BENDS DOWN
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: SAVAGE HITS
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120
+      - Name: SAVAGE PHRASES
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 120
+      - Name: BREATHES
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120

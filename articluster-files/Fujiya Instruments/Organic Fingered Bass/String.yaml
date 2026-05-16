@@ -5,31 +5,33 @@ ManufacturerName: Fujiya Instruments
 ProductName: Organic Fingered Bass
 PatchName: String
 Description: Fujiya Instruments Organic Fingered Bass - String
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: String - Auto
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: String - 4th
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: String - 3rd
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: String - 2nd
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: String - 1st
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
+ArticulationGroups:
+  - Name: String
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: String - Auto
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: String - 4th
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: String - 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: String - 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: String - 1st
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120

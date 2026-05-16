@@ -5,21 +5,23 @@ ManufacturerName: 8DIO
 ProductName: Lacrimosa Choir
 PatchName: Effects
 Description: 8DIO Lacrimosa Choir - Effects
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: WHISTLE
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: BREATHS
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: FX
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
+ArticulationGroups:
+  - Name: Effects
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: WHISTLE
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: BREATHS
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: FX
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120

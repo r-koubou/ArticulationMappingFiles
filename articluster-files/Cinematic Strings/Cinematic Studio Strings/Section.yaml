@@ -5,81 +5,83 @@ ManufacturerName: Cinematic Strings
 ProductName: Cinematic Studio Strings
 PatchName: Section
 Description: Cinematic Strings Cinematic Studio Strings - Section
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain - Leg Std
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 64
-  - Name: Sustain - Leg Adv
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 127
-  - Name: Stac - Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 32
-  - Name: Stac - Staccatissimo
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 64
-  - Name: Stac - Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 96
-  - Name: Stac - Sfz
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 127
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 100
-  - Name: Harmonic
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 100
-  - Name: Trills
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 100
-  - Name: MeasuredTrem
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 100
-  - Name: Marc - Spiccato Overlay Off
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 64
-  - Name: Marc - Spiccato Overlay On
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 127
-  - Name: Pizz - Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 41
-  - Name: Pizz - Bartok Snap
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 84
-  - Name: Pizz - Col Legno
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 127
+ArticulationGroups:
+  - Name: Section
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain - Leg Std
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 64
+      - Name: Sustain - Leg Adv
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 127
+      - Name: Stac - Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 32
+      - Name: Stac - Staccatissimo
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 64
+      - Name: Stac - Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 96
+      - Name: Stac - Sfz
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 127
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Harmonic
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 100
+      - Name: Trills
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: MeasuredTrem
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Marc - Spiccato Overlay Off
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 64
+      - Name: Marc - Spiccato Overlay On
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 127
+      - Name: Pizz - Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 41
+      - Name: Pizz - Bartok Snap
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 84
+      - Name: Pizz - Col Legno
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 127

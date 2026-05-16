@@ -5,31 +5,33 @@ ManufacturerName: Chris Hein
 ProductName: Orchestral Winds Compact
 PatchName: Main
 Description: Chris Hein Orchestral Winds Compact - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 100
-  - Name: Dynamic Expression Long
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 100
-  - Name: Short 1
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 100
-  - Name: Short 2
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 100
-  - Name: Short 3
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 100
+      - Name: Dynamic Expression Long
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Short 1
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Short 2
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: Short 3
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 100

@@ -5,36 +5,38 @@ ManufacturerName: Auddict
 ProductName: Master Brass
 PatchName: Tubas
 Description: Auddict Master Brass - Tubas
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: No Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 84
-        Data2: 120
-  - Name: Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 85
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 86
-        Data2: 120
-  - Name: Chords <
-    MidiMessages:
-      - Status: 144
-        Data1: 87
-        Data2: 120
-  - Name: Chords >
-    MidiMessages:
-      - Status: 144
-        Data1: 88
-        Data2: 120
-  - Name: Rips
-    MidiMessages:
-      - Status: 144
-        Data1: 89
-        Data2: 120
+ArticulationGroups:
+  - Name: Tubas
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: No Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 84
+            Data2: 120
+      - Name: Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 85
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 86
+            Data2: 120
+      - Name: Chords <
+        MidiMessages:
+          - Status: 144
+            Data1: 87
+            Data2: 120
+      - Name: Chords >
+        MidiMessages:
+          - Status: 144
+            Data1: 88
+            Data2: 120
+      - Name: Rips
+        MidiMessages:
+          - Status: 144
+            Data1: 89
+            Data2: 120

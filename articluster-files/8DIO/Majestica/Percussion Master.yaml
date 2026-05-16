@@ -5,16 +5,18 @@ ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Percussion Master
 Description: 8DIO Majestica - Percussion Master
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: MASTER PERCUSSION
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MASTER ROLLS
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
+ArticulationGroups:
+  - Name: Percussion Master
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: MASTER PERCUSSION
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MASTER ROLLS
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120

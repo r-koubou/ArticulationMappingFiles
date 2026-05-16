@@ -5,21 +5,23 @@ ManufacturerName: MusicLab
 ProductName: RealEight
 PatchName: Main
 Description: MusicLab RealEight - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Default
-    MidiMessages:
-      - Status: 144
-        Data1: 11
-        Data2: 120
-  - Name: Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: BridgeMute
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Default
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 120
+      - Name: Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: BridgeMute
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120

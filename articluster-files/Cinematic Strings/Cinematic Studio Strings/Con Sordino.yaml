@@ -5,16 +5,18 @@ ManufacturerName: Cinematic Strings
 ProductName: Cinematic Studio Strings
 PatchName: Con Sordino
 Description: Cinematic Strings Cinematic Studio Strings - Con Sordino
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 23
-        Data2: 64
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 23
-        Data2: 127
+ArticulationGroups:
+  - Name: Con Sordino
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 64
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 127

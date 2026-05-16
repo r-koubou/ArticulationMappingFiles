@@ -5,46 +5,48 @@ ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Trumpets Staccato
 Description: Native Instruments Symphony Brass Ensemble - Trumpets Staccato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Staccato p
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Staccato F
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Staccato Velocity
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Stac. Triple Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Stac. Str. Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Stac. Cup Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Stac. Harmon Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Trumpets Staccato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Staccato p
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Staccato F
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Staccato Velocity
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Stac. Triple Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Stac. Str. Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Stac. Cup Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Stac. Harmon Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

@@ -5,26 +5,28 @@ ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Sample
 Description: Native Instruments Symphony Brass Ensemble - Sample
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: True Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: True Legato p
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: True Legato mf
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: True Legato F
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
+ArticulationGroups:
+  - Name: Sample
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: True Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: True Legato p
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: True Legato mf
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: True Legato F
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120

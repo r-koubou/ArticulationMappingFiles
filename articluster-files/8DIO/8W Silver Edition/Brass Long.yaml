@@ -5,36 +5,38 @@ ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Brass Long
 Description: 8DIO 8W Silver Edition - Brass Long
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SUSTAIN MW
-    MidiMessages:
-      - Status: 144
-        Data1: 96
-        Data2: 120
-  - Name: POWER SUSTAIN MW
-    MidiMessages:
-      - Status: 144
-        Data1: 97
-        Data2: 120
-  - Name: POWER MUTED MW
-    MidiMessages:
-      - Status: 144
-        Data1: 98
-        Data2: 120
-  - Name: ARC P-MF-P
-    MidiMessages:
-      - Status: 144
-        Data1: 99
-        Data2: 120
-  - Name: ARC P-F-P
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: ARC SHORT
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
+ArticulationGroups:
+  - Name: Brass Long
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SUSTAIN MW
+        MidiMessages:
+          - Status: 144
+            Data1: 96
+            Data2: 120
+      - Name: POWER SUSTAIN MW
+        MidiMessages:
+          - Status: 144
+            Data1: 97
+            Data2: 120
+      - Name: POWER MUTED MW
+        MidiMessages:
+          - Status: 144
+            Data1: 98
+            Data2: 120
+      - Name: ARC P-MF-P
+        MidiMessages:
+          - Status: 144
+            Data1: 99
+            Data2: 120
+      - Name: ARC P-F-P
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: ARC SHORT
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120

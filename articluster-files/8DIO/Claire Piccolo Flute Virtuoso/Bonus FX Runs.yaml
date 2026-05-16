@@ -5,36 +5,38 @@ ManufacturerName: 8DIO
 ProductName: Claire Piccolo Flute Virtuoso
 PatchName: Bonus FX Runs
 Description: 8DIO Claire Piccolo Flute Virtuoso - Bonus FX Runs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: MAJ RUN
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MAJ RUN 2 OCT
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MIN RUN
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MIN RUN 2 OCT
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: BREATHS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: VALVE CLICKS
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Bonus FX Runs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: MAJ RUN
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MAJ RUN 2 OCT
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MIN RUN
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MIN RUN 2 OCT
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: BREATHS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: VALVE CLICKS
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

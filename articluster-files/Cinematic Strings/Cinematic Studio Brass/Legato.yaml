@@ -5,26 +5,28 @@ ManufacturerName: Cinematic Strings
 ProductName: Cinematic Studio Brass
 PatchName: Legato
 Description: Cinematic Strings Cinematic Studio Brass - Legato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Legato - On
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 64
-  - Name: Legato - Off
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 127
-  - Name: Legato - On (Ens)
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 64
-  - Name: Legato - Off (Ens)
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 127
+ArticulationGroups:
+  - Name: Legato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Legato - On
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 64
+      - Name: Legato - Off
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 127
+      - Name: Legato - On (Ens)
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 64
+      - Name: Legato - Off (Ens)
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 127

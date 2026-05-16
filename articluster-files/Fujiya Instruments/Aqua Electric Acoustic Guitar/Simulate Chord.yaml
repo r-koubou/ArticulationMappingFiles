@@ -5,26 +5,28 @@ ManufacturerName: Fujiya Instruments
 ProductName: Aqua Electric Acoustic Guitar
 PatchName: Simulate Chord
 Description: Fujiya Instruments Aqua Electric Acoustic Guitar - Simulate Chord
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Position 1
-    MidiMessages:
-      - Status: 144
-        Data1: 72
-        Data2: 120
-  - Name: Position 2
-    MidiMessages:
-      - Status: 144
-        Data1: 73
-        Data2: 120
-  - Name: Position 3
-    MidiMessages:
-      - Status: 144
-        Data1: 74
-        Data2: 120
-  - Name: Position 4
-    MidiMessages:
-      - Status: 144
-        Data1: 75
-        Data2: 120
+ArticulationGroups:
+  - Name: Simulate Chord
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Position 1
+        MidiMessages:
+          - Status: 144
+            Data1: 72
+            Data2: 120
+      - Name: Position 2
+        MidiMessages:
+          - Status: 144
+            Data1: 73
+            Data2: 120
+      - Name: Position 3
+        MidiMessages:
+          - Status: 144
+            Data1: 74
+            Data2: 120
+      - Name: Position 4
+        MidiMessages:
+          - Status: 144
+            Data1: 75
+            Data2: 120

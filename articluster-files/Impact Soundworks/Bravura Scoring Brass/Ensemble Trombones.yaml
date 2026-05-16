@@ -5,36 +5,38 @@ ManufacturerName: Impact Soundworks
 ProductName: Bravura Scoring Brass
 PatchName: Ensemble Trombones
 Description: Impact Soundworks Bravura Scoring Brass - Ensemble Trombones
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Tenuto
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Flutter
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Ensemble Trombones
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Tenuto
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Flutter
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

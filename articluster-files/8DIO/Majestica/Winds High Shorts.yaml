@@ -5,21 +5,23 @@ ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Winds High Shorts
 Description: 8DIO Majestica - Winds High Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: STACCATISSIMO
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: DOUBLE TONGUE
-    MidiMessages:
-      - Status: 144
-        Data1: 37
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
+ArticulationGroups:
+  - Name: Winds High Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: STACCATISSIMO
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: DOUBLE TONGUE
+        MidiMessages:
+          - Status: 144
+            Data1: 37
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120

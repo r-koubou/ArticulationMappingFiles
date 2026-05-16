@@ -5,11 +5,13 @@ ManufacturerName: Studio Major 7th
 ProductName: KMG7 Advanced
 PatchName: Picking
 Description: Studio Major 7th KMG7 Advanced - Picking
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Start with Up
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 120
+ArticulationGroups:
+  - Name: Picking
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Start with Up
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 120

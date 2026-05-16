@@ -5,61 +5,63 @@ ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Trombone
 Description: Spitfire BBC Symphony Orchestra Core - Trombone
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Legato(Etended)
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Long
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Staccatissimo
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 100
-  - Name: Long Cuivre
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 100
-  - Name: Long SFZ
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 100
-  - Name: Long Flutter
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 100
-  - Name: Multi Toungue
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 100
-  - Name: Long(Muted)
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 100
-  - Name: Staccatissimo(Muted)
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 100
-  - Name: Marcato(Muted)
-    MidiMessages:
-      - Status: 144
-        Data1: 10
-        Data2: 100
+ArticulationGroups:
+  - Name: Trombone
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Legato(Etended)
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Long
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Staccatissimo
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 100
+      - Name: Long Cuivre
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 100
+      - Name: Long SFZ
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 100
+      - Name: Long Flutter
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 100
+      - Name: Multi Toungue
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 100
+      - Name: Long(Muted)
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 100
+      - Name: Staccatissimo(Muted)
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 100
+      - Name: Marcato(Muted)
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 100

@@ -5,26 +5,28 @@ ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Winds Low Shorts
 Description: 8DIO 8W Silver Edition - Winds Low Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: STACCATISSIMO
-    MidiMessages:
-      - Status: 144
-        Data1: 96
-        Data2: 120
-  - Name: DOUBLE TONGUE
-    MidiMessages:
-      - Status: 144
-        Data1: 97
-        Data2: 120
-  - Name: SLAP NOTES
-    MidiMessages:
-      - Status: 144
-        Data1: 98
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 99
-        Data2: 120
+ArticulationGroups:
+  - Name: Winds Low Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: STACCATISSIMO
+        MidiMessages:
+          - Status: 144
+            Data1: 96
+            Data2: 120
+      - Name: DOUBLE TONGUE
+        MidiMessages:
+          - Status: 144
+            Data1: 97
+            Data2: 120
+      - Name: SLAP NOTES
+        MidiMessages:
+          - Status: 144
+            Data1: 98
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 99
+            Data2: 120

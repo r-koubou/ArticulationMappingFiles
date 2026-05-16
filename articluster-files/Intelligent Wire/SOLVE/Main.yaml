@@ -5,18 +5,20 @@ ManufacturerName: Intelligent Wire
 ProductName: SOLVE
 PatchName: Main
 Description: Intelligent Wire SOLVE - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Poly
-    MidiMessages: []
-  - Name: Portament
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Poly
+        MidiMessages: []
+      - Name: Portament
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120

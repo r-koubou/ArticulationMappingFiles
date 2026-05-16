@@ -5,31 +5,33 @@ ManufacturerName: SONiVOX
 ProductName: Orchestral Companion Strings
 PatchName: Main
 Description: SONiVOX Orchestral Companion Strings - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 120
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 120
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 120
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120

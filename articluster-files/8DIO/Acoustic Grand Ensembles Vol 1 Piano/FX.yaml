@@ -5,31 +5,33 @@ ManufacturerName: 8DIO
 ProductName: Acoustic Grand Ensembles Vol 1 Piano
 PatchName: FX
 Description: 8DIO Acoustic Grand Ensembles Vol 1 Piano - FX
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Clusters Short
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Clusters Long
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Glissando Fast
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
-  - Name: Glissando Slow
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 100
-  - Name: Rhythmic Banging
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 100
+ArticulationGroups:
+  - Name: FX
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Clusters Short
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Clusters Long
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Glissando Fast
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100
+      - Name: Glissando Slow
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 100
+      - Name: Rhythmic Banging
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 100

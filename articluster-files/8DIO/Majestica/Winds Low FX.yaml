@@ -5,16 +5,18 @@ ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Winds Low FX
 Description: 8DIO Majestica - Winds Low FX
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SAVAGE PHRASES UP
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: SAVAGE PHRASES DOWN
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
+ArticulationGroups:
+  - Name: Winds Low FX
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SAVAGE PHRASES UP
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: SAVAGE PHRASES DOWN
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120

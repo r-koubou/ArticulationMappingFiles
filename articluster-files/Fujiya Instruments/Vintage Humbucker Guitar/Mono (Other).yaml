@@ -5,21 +5,23 @@ ManufacturerName: Fujiya Instruments
 ProductName: Vintage Humbucker Guitar
 PatchName: Mono (Other)
 Description: Fujiya Instruments Vintage Humbucker Guitar - Mono (Other)
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Auto Alternate
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 120
-  - Name: Always Down
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 120
-  - Name: Always Up
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 120
+ArticulationGroups:
+  - Name: Mono (Other)
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto Alternate
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: Always Down
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: Always Up
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 120

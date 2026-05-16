@@ -5,16 +5,18 @@ ManufacturerName: Fujiya Instruments
 ProductName: Vintage Humbucker Guitar
 PatchName: Arpeggio
 Description: Fujiya Instruments Vintage Humbucker Guitar - Arpeggio
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 120
-  - Name: Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 35
-        Data2: 120
+ArticulationGroups:
+  - Name: Arpeggio
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 120
+      - Name: Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 35
+            Data2: 120

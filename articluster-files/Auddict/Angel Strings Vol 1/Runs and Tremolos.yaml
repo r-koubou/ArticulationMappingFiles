@@ -5,26 +5,28 @@ ManufacturerName: Auddict
 ProductName: Angel Strings Vol 1
 PatchName: Runs and Tremolos
 Description: Auddict Angel Strings Vol 1 - Runs and Tremolos
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sequencer 0
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 100
-  - Name: Sequencer 1
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 100
-  - Name: Sequencer 2
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 100
-  - Name: Sequencer 3
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 100
+ArticulationGroups:
+  - Name: Runs and Tremolos
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sequencer 0
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 100
+      - Name: Sequencer 1
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 100
+      - Name: Sequencer 2
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 100
+      - Name: Sequencer 3
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 100

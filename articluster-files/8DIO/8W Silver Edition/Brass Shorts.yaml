@@ -5,26 +5,28 @@ ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Brass Shorts
 Description: 8DIO 8W Silver Edition - Brass Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SPICCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: SPICCATTISSIMO
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: MUTED MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
+ArticulationGroups:
+  - Name: Brass Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SPICCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: SPICCATTISSIMO
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: MUTED MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120

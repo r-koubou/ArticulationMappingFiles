@@ -5,21 +5,23 @@ ManufacturerName: Cinematic Strings
 ProductName: Cinematic Studio Strings
 PatchName: Ensemble Lite
 Description: Cinematic Strings Cinematic Studio Strings - Ensemble Lite
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 100
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
+ArticulationGroups:
+  - Name: Ensemble Lite
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 100
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100

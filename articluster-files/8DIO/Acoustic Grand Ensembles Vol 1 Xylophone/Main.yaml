@@ -5,16 +5,18 @@ ManufacturerName: 8DIO
 ProductName: Acoustic Grand Ensembles Vol 1 Xylophone
 PatchName: Main
 Description: 8DIO Acoustic Grand Ensembles Vol 1 Xylophone - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Soft Mallet
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Hard Mallet
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Soft Mallet
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Hard Mallet
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100

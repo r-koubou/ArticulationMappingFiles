@@ -5,21 +5,23 @@ ManufacturerName: Three Body Technology
 ProductName: Heavier7Strings
 PatchName: Picking CC40
 Description: Three Body Technology Heavier7Strings - Picking CC40
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Auto
-    MidiMessages:
-      - Status: 176
-        Data1: 40
-        Data2: 0
-  - Name: Down Picking
-    MidiMessages:
-      - Status: 176
-        Data1: 40
-        Data2: 22
-  - Name: Up Picking
-    MidiMessages:
-      - Status: 176
-        Data1: 40
-        Data2: 24
+ArticulationGroups:
+  - Name: Picking CC40
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto
+        MidiMessages:
+          - Status: 176
+            Data1: 40
+            Data2: 0
+      - Name: Down Picking
+        MidiMessages:
+          - Status: 176
+            Data1: 40
+            Data2: 22
+      - Name: Up Picking
+        MidiMessages:
+          - Status: 176
+            Data1: 40
+            Data2: 24

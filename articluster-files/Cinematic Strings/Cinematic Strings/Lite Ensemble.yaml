@@ -5,21 +5,23 @@ ManufacturerName: Cinematic Strings
 ProductName: Cinematic Strings
 PatchName: Lite Ensemble
 Description: Cinematic Strings Cinematic Strings - Lite Ensemble
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Arco
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 120
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 19
-        Data2: 120
+ArticulationGroups:
+  - Name: Lite Ensemble
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Arco
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120

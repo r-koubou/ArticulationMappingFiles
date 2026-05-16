@@ -5,21 +5,23 @@ ManufacturerName: 8DIO
 ProductName: Acoustic Grand Ensembles Vol 1 Tublar Bells
 PatchName: Main
 Description: 8DIO Acoustic Grand Ensembles Vol 1 Tublar Bells - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Effects
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Effects
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100
