@@ -23,6 +23,7 @@ jobs:
        TZ: 'Asia/Tokyo'
        ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
        ARTICLUSTER_OUTPUT: ${{ github.workspace }}/zensical/docs/assets/converted
+       ARTICLUSTER_MARKDOWN_OUTPUT: ${{ github.workspace }}/zensical/docs
 
     steps:
     #----------------------------------------------------------
@@ -49,20 +50,15 @@ jobs:
 
     #----------------------------------------------------------
     # Convert articluster-files/
+    # Generate Markdown Page for zensical
     #----------------------------------------------------------
-    - name: Convert articluster-files
+    - name: Convert Articluster-files and Generate Markdown Page for zensical
       run: |
-        dotnet tool exec -y ArtiCluster convert ${ARTICLUSTER_INPUT} ${ARTICLUSTER_OUTPUT}
-
-    #----------------------------------------------------------
-    # Generate zensical page
-    #----------------------------------------------------------
-    - name: Generate zensical page
-      run: |
-        pushd zensical-tools/markdown-gen
-          uv sync
-          uv run python ./main.py
-        popd
+        dotnet tool exec -y ArtiCluster \
+            convert \
+            --output-markdown-list-dir ${ARTICLUSTER_MARKDOWN_OUTPUT} \
+            ${ARTICLUSTER_INPUT} \
+            ${ARTICLUSTER_OUTPUT}
 
     #----------------------------------------------------------
     # Replace build information in zensical page
