@@ -1,45 +1,47 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 13ede6d6-fbbd-12d4-f03f-b062488d0c14
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Piccolo Flute Virtuoso
 PatchName: Arcs
 Description: 8DIO Claire Piccolo Flute Virtuoso - Arcs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: P POCO VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: P-MP-P
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MP-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MP-F
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MP-FF
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MF-FF
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: F-FF
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
+ArticulationGroups:
+  - Name: Arcs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: P POCO VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: P-MP-P
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MP-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MP-F
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MP-FF
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MF-FF
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: F-FF
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120

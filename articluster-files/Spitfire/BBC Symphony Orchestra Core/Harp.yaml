@@ -1,35 +1,37 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: aac8c6f6-cbe5-483c-9b65-ebefc9aec63b
 Author: R-Koubou
 ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Harp
 Description: Spitfire BBC Symphony Orchestra Core - Harp
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustained
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Damped
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Damped Medium
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
-  - Name: Bisbi Glando Trem
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 100
-  - Name: Gliss Fx
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 100
+ArticulationGroups:
+  - Name: Harp
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustained
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Damped
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Damped Medium
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100
+      - Name: Bisbi Glando Trem
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 100
+      - Name: Gliss Fx
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 100

@@ -1,45 +1,47 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: bd1fc4e4-a5ee-5e39-9a70-b86010f39c1e
 Author: R-Koubou
 ManufacturerName: Red Room Audio
 ProductName: Palette Primary Colors
 PatchName: Brass (Chamber)
 Description: Red Room Audio Palette Primary Colors - Brass (Chamber)
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 96
-        Data2: 120
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 97
-        Data2: 120
-  - Name: Tenuto
-    MidiMessages:
-      - Status: 144
-        Data1: 98
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 99
-        Data2: 120
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: Trill HT
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: Trill WT
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
+ArticulationGroups:
+  - Name: Brass (Chamber)
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 96
+            Data2: 120
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 97
+            Data2: 120
+      - Name: Tenuto
+        MidiMessages:
+          - Status: 144
+            Data1: 98
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 99
+            Data2: 120
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: Trill HT
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: Trill WT
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120

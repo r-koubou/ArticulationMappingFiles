@@ -1,45 +1,47 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 6382996a-07e9-c034-fc6b-5ec2e679f841
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Clarinet
 PatchName: Arcs
 Description: 8DIO Claire Clarinet - Arcs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: PP-P-P
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: P-MP-P
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MP-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: M-F-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MF-F-MF
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MP-MF-MP VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: MP-F-MP VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
+ArticulationGroups:
+  - Name: Arcs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: PP-P-P
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: P-MP-P
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MP-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: M-F-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MF-F-MF
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MP-MF-MP VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: MP-F-MP VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120

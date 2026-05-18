@@ -1,60 +1,62 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: fec1aac8-a229-5b74-97ab-f902f7d630a9
 Author: R-Koubou
 ManufacturerName: Auddict
 ProductName: Angel Strings Vol 1
 PatchName: Tonal Longs and Shorts
 Description: Auddict Angel Strings Vol 1 - Tonal Longs and Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sus & Marc
-    MidiMessages:
-      - Status: 144
-        Data1: 99
-        Data2: 100
-  - Name: Cluster To Units
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 100
-  - Name: Molto Sul Tast
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 100
-  - Name: Timbre Osc
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 100
-  - Name: Sul Point
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 100
-  - Name: Sul.P Trem
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 100
-  - Name: Bend Downup
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 100
-  - Name: Bend Updown
-    MidiMessages:
-      - Status: 144
-        Data1: 106
-        Data2: 100
-  - Name: Sautille Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 107
-        Data2: 100
-  - Name: Sul.T Stacc
-    MidiMessages:
-      - Status: 144
-        Data1: 108
-        Data2: 100
+ArticulationGroups:
+  - Name: Tonal Longs and Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sus & Marc
+        MidiMessages:
+          - Status: 144
+            Data1: 99
+            Data2: 100
+      - Name: Cluster To Units
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 100
+      - Name: Molto Sul Tast
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 100
+      - Name: Timbre Osc
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 100
+      - Name: Sul Point
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 100
+      - Name: Sul.P Trem
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 100
+      - Name: Bend Downup
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 100
+      - Name: Bend Updown
+        MidiMessages:
+          - Status: 144
+            Data1: 106
+            Data2: 100
+      - Name: Sautille Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 107
+            Data2: 100
+      - Name: Sul.T Stacc
+        MidiMessages:
+          - Status: 144
+            Data1: 108
+            Data2: 100

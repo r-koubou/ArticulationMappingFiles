@@ -1,35 +1,37 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: f19a0be1-d96a-f081-ceec-8d0f6d977d11
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Bassoon
 PatchName: General Arts
 Description: 8DIO Claire Bassoon - General Arts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: STACMO
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: SUS VEL
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MIN 2ND TRILLS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MAJ 2ND TRILLS
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: General Arts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: STACMO
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: SUS VEL
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MIN 2ND TRILLS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MAJ 2ND TRILLS
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

@@ -1,50 +1,52 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: e739ad85-8ba0-44eb-8022-e279fa94a349
 Author: R-Koubou
 ManufacturerName: Auddict
 ProductName: Master Brass
 PatchName: Trombones
 Description: Auddict Master Brass - Trombones
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: No Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: OCT Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: FST Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Stutter
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
-  - Name: Chords <
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 120
-  - Name: Chords >
-    MidiMessages:
-      - Status: 144
-        Data1: 35
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
+ArticulationGroups:
+  - Name: Trombones
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: No Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: OCT Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: FST Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Stutter
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: Chords <
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 120
+      - Name: Chords >
+        MidiMessages:
+          - Status: 144
+            Data1: 35
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120

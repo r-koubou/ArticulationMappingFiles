@@ -1,40 +1,42 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: aa63d033-9233-a94a-87b5-47d832eaa151
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Alto Flute Virtuoso
 PatchName: Arcs
 Description: 8DIO Claire Alto Flute Virtuoso - Arcs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: P-MP-P
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: P-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MP-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MP-MF-MP VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MP-FF-MF VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: F-FF-F-VIB
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Arcs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: P-MP-P
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: P-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MP-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MP-MF-MP VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MP-FF-MF VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: F-FF-F-VIB
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

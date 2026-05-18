@@ -1,35 +1,37 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 85a2add3-2909-e254-1e8b-7fe3fae2d275
 Author: R-Koubou
 ManufacturerName: Impact Soundworks
 ProductName: Shreddage 2
 PatchName: V3 (Legacy)
 Description: Impact Soundworks Shreddage 2 - V3 (Legacy)
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Default
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
-  - Name: Harmonic
-    MidiMessages:
-      - Status: 144
-        Data1: 18
-        Data2: 120
-  - Name: FX
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 120
+ArticulationGroups:
+  - Name: V3 (Legacy)
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Default
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Harmonic
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 120
+      - Name: FX
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120

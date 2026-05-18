@@ -1,60 +1,62 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: d4933eef-78fb-d379-6d7c-7008a1a65676
 Author: R-Koubou
 ManufacturerName: Auddict
 ProductName: Master Solo Brass
 PatchName: Piccolo
 Description: Auddict Master Solo Brass - Piccolo
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Legato Vib
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Legato No Vib
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Poly Vib
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Poly No Vib
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Trills
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Flutter
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Triple Toungue
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
-  - Name: Staccatissimo
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 120
-  - Name: Key Noises
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 120
+ArticulationGroups:
+  - Name: Piccolo
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Legato Vib
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Legato No Vib
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Poly Vib
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Poly No Vib
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Trills
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Flutter
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Triple Toungue
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: Staccatissimo
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 120
+      - Name: Key Noises
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 120

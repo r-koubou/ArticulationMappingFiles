@@ -1,55 +1,57 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 59a620fa-fd0e-b658-f28f-53e76c09dcd8
 Author: R-Koubou
 ManufacturerName: Solemn Tones
 ProductName: The Loki Bass
 PatchName: All
 Description: Solemn Tones The Loki Bass - All
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Mute 1
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Mute 2
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Mute 3
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Tapping
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
-  - Name: Scrapes
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 120
-  - Name: Alt Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Down Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Up Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
+ArticulationGroups:
+  - Name: All
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Mute 1
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Mute 2
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Mute 3
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Tapping
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: Scrapes
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 120
+      - Name: Alt Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Down Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Up Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120

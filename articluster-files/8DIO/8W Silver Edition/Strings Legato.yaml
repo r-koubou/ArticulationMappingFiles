@@ -1,40 +1,42 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: d6f5ddc9-7a5c-d5db-6fde-736a3f80a8e3
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Strings Legato
 Description: 8DIO 8W Silver Edition - Strings Legato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: NATURAL
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: SUS XFADE
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: MEDIUM 1
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: MEDIUM 2
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: STRONG 1
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings Legato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: NATURAL
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: SUS XFADE
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: MEDIUM 1
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: MEDIUM 2
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: STRONG 1
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 120

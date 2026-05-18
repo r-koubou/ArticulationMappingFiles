@@ -1,25 +1,27 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 56bdafcf-fa25-b36f-efa6-50fefcded681
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Strings FX
 Description: 8DIO Majestica - Strings FX
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: GROUP BARTOK
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: SAVAGE HITS
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: SAVAGE PHRASES
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings FX
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: GROUP BARTOK
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: SAVAGE HITS
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: SAVAGE PHRASES
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120

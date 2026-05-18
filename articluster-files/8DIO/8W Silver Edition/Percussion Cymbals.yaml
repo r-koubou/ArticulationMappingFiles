@@ -1,35 +1,37 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: b2f52323-565c-0fa7-4bde-ad357032c8df
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Percussion Cymbals
 Description: 8DIO 8W Silver Edition - Percussion Cymbals
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: CYMBALS
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: SCRATCHES
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: TAM TAMS
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: SMALL GONGS
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: LARGE GONGS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
+ArticulationGroups:
+  - Name: Percussion Cymbals
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: CYMBALS
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: SCRATCHES
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: TAM TAMS
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: SMALL GONGS
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: LARGE GONGS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120

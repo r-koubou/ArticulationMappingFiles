@@ -1,20 +1,22 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 0103c13b-0b83-437a-bf2d-f01dc6d800b9
 Author: R-Koubou
 ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Crotales
 Description: Spitfire BBC Symphony Orchestra Core - Crotales
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Hits
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Hits Bowed
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
+ArticulationGroups:
+  - Name: Crotales
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Hits
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Hits Bowed
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100

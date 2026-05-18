@@ -1,60 +1,62 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: e68b4e4d-ca66-47ae-a5bc-93acba7fac4d
 Author: R-Koubou
 ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Timpani
 Description: Spitfire BBC Symphony Orchestra Core - Timpani
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Hits
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Rolls
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Hits Soft
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
-  - Name: Rolls Soft
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 100
-  - Name: Hits Hotrods
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 100
-  - Name: Long Rolls Hotrods
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 100
-  - Name: Hits Damped
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 100
-  - Name: Hits Super Damped
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 100
-  - Name: Hotorods Hits Damped
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 100
-  - Name: Hits Dumped Soft
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 100
+ArticulationGroups:
+  - Name: Timpani
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Hits
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Rolls
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Hits Soft
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100
+      - Name: Rolls Soft
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 100
+      - Name: Hits Hotrods
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 100
+      - Name: Long Rolls Hotrods
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 100
+      - Name: Hits Damped
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 100
+      - Name: Hits Super Damped
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 100
+      - Name: Hotorods Hits Damped
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 100
+      - Name: Hits Dumped Soft
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 100

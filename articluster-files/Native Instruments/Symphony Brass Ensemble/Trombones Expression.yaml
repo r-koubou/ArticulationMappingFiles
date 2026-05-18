@@ -1,50 +1,52 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: d0e37fa2-744a-2d95-6acc-cb23cbb19889
 Author: R-Koubou
 ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Trombones Expression
 Description: Native Instruments Symphony Brass Ensemble - Trombones Expression
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Bend Up
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Decrescendo
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Sforzando
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Crescendo
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Swell
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Trill Gliss
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Trill Tongued
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Blast FFF
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Trombones Expression
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Bend Up
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Decrescendo
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Sforzando
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Crescendo
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Swell
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Trill Gliss
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Trill Tongued
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Blast FFF
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

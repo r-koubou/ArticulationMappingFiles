@@ -1,55 +1,57 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 54bdc552-f824-53a3-eda6-f03227094e30
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Acoustic Grand Ensembles Vol 1 Guitar
 PatchName: Pattern
 Description: 8DIO Acoustic Grand Ensembles Vol 1 Guitar - Pattern
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Basic Strum
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Fundamentally Strum
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Quieten Down
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
-  - Name: Alternative Madness
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 100
-  - Name: Alternative Accent
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 100
-  - Name: Alternative Rhythm
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 100
-  - Name: Basically Rhythm
-    MidiMessages:
-      - Status: 144
-        Data1: 18
-        Data2: 100
-  - Name: Fundamentally Rhythm
-    MidiMessages:
-      - Status: 144
-        Data1: 19
-        Data2: 100
-  - Name: Short But Mighty
-    MidiMessages:
-      - Status: 144
-        Data1: 20
-        Data2: 100
+ArticulationGroups:
+  - Name: Pattern
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Basic Strum
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Fundamentally Strum
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Quieten Down
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100
+      - Name: Alternative Madness
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 100
+      - Name: Alternative Accent
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 100
+      - Name: Alternative Rhythm
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 100
+      - Name: Basically Rhythm
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 100
+      - Name: Fundamentally Rhythm
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 100
+      - Name: Short But Mighty
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 100

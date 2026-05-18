@@ -1,50 +1,52 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: f2ccdc3e-9633-4f7e-8bb5-ec0c294da6bb
 Author: R-Koubou
 ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Trumpets Sustain
 Description: Native Instruments Symphony Brass Ensemble - Trumpets Sustain
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain All
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Sust. Dbl. Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Sust. Flut. Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Trill Semi-Tone
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Trill Horse
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Trill Whole Tone
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Sust. Str. Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Sust. Harmon Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Trumpets Sustain
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain All
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Sust. Dbl. Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Sust. Flut. Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Trill Semi-Tone
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Trill Horse
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Trill Whole Tone
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Sust. Str. Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Sust. Harmon Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

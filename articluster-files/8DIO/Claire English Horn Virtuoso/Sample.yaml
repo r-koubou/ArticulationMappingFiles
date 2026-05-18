@@ -1,50 +1,52 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 108187df-f851-0f67-eed2-adf6e9962efc
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire English Horn Virtuoso
 PatchName: Sample
 Description: 8DIO Claire English Horn Virtuoso - Sample
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: NATURAL
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: SOFT
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MEDIUM
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: STRONG 1
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: STRONG 2
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: SUS XFADE
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: STACMO
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Sample
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: NATURAL
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: SOFT
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MEDIUM
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: STRONG 1
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: STRONG 2
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: SUS XFADE
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: STACMO
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

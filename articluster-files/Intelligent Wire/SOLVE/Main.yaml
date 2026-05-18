@@ -1,22 +1,24 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 826d03ab-6a3d-8153-5fbe-1ee2656208ad
 Author: R-Koubou
 ManufacturerName: Intelligent Wire
 ProductName: SOLVE
 PatchName: Main
 Description: Intelligent Wire SOLVE - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Poly
-    MidiMessages: []
-  - Name: Portament
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Poly
+        MidiMessages: []
+      - Name: Portament
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120

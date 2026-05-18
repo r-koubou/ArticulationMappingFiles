@@ -1,55 +1,57 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 2d5b09ee-d573-4f96-a71d-8a8d762a079e
 Author: R-Koubou
 ManufacturerName: Impact Soundworks
 ProductName: Shreddage 3 Guitar
 PatchName: Main
 Description: Impact Soundworks Shreddage 3 Guitar - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
-  - Name: Power Chord
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Power Chord Stac
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 100
-  - Name: Choke
-    MidiMessages:
-      - Status: 144
-        Data1: 21
-        Data2: 100
-  - Name: Tapping
-    MidiMessages:
-      - Status: 144
-        Data1: 18
-        Data2: 100
-  - Name: Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 100
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 100
-  - Name: Fx
-    MidiMessages:
-      - Status: 144
-        Data1: 19
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100
+      - Name: Power Chord
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Power Chord Stac
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 100
+      - Name: Choke
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 100
+      - Name: Tapping
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 100
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 100
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 100
+      - Name: Fx
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 100

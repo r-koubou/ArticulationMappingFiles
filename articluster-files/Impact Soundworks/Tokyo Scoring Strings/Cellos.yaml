@@ -1,90 +1,92 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: ecad2bad-efb1-4d51-ab7a-3f8f1eb81468
 Author: R-Koubou
 ManufacturerName: Impact Soundworks
 ProductName: Tokyo Scoring Strings
 PatchName: Cellos
 Description: Impact Soundworks Tokyo Scoring Strings - Cellos
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Arco
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 11
-        Data2: 100
-  - Name: Trills HT
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Trills WT
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 10
-        Data2: 100
-  - Name: Polta Bow
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 100
-  - Name: Polta Slur
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 100
-  - Name: Sforzando Long
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Sforzando Short
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
-  - Name: Decrescendo Long
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 100
-  - Name: Decrescendo Short
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 100
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 100
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 100
-  - Name: Staccatissimo
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 100
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 100
-  - Name: Spiccato Secco
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 100
+ArticulationGroups:
+  - Name: Cellos
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Arco
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 100
+      - Name: Trills HT
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Trills WT
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 100
+      - Name: Polta Bow
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Polta Slur
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: Sforzando Long
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Sforzando Short
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100
+      - Name: Decrescendo Long
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 100
+      - Name: Decrescendo Short
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 100
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 100
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 100
+      - Name: Staccatissimo
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 100
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 100
+      - Name: Spiccato Secco
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 100

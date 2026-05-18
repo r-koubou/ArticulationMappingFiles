@@ -1,25 +1,27 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 1ccc6024-c034-1bb2-b5b5-74d9968a5a57
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Winds High Shorts
 Description: 8DIO 8W Silver Edition - Winds High Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: STACCATISSIMO
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: DOUBLE TONGUE
-    MidiMessages:
-      - Status: 144
-        Data1: 37
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
+ArticulationGroups:
+  - Name: Winds High Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: STACCATISSIMO
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: DOUBLE TONGUE
+        MidiMessages:
+          - Status: 144
+            Data1: 37
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120

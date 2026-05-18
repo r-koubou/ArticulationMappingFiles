@@ -1,35 +1,37 @@
-FormatVersion: 1.0.0
+FormatVersion: 0
 Id: 9586c05a-7d56-946c-72d8-31fb22114808
 Author: R-Koubou
 ManufacturerName: Soundiron
 ProductName: Hyperion Strings Elements
 PatchName: Violin True Legato
 Description: Soundiron Hyperion Strings Elements - Violin True Legato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: True Legato Dynamic
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: True Legato P
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 100
-  - Name: True Legato mp
-    MidiMessages:
-      - Status: 144
-        Data1: 18
-        Data2: 100
-  - Name: True Legato mf
-    MidiMessages:
-      - Status: 144
-        Data1: 20
-        Data2: 100
-  - Name: True Legato F
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 100
+ArticulationGroups:
+  - Name: Violin True Legato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: True Legato Dynamic
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: True Legato P
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 100
+      - Name: True Legato mp
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 100
+      - Name: True Legato mf
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 100
+      - Name: True Legato F
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 100
