@@ -2,22 +2,19 @@
 
 set -e
 
-echo "## Converting ArtiCluster definition files to markdown files..."
+echo "## Converting ArtiCluster definition files and generating markdown files..."
 
-dotnet tool exec -y ArtiCluster convert --overwrite articluster-files zensical/docs/assets/converted
+dotnet tool exec -y ArtiCluster \
+    convert \
+    --overwrite \
+    --output-markdown-list-dir zensical/docs \
+    articluster-files \
+    zensical/docs/assets/converted
+
 echo "----------------------------------------------------------------------------"
 echo "👍 Converted files -> zensical/docs/assets/converted"
+echo "👍 Generated Markdown files -> zensical/docs"
 echo "----------------------------------------------------------------------------"
-echo ""
-
-echo "## Generating markdown files for Zensical from converted data..."
-
-pushd zensical-tools/markdown-gen
-    uv sync
-    uv run ./main.py
-popd
-
-echo "👍 Markdown generation completed: zensical-tools/markdown-gen -> zensical/docs/assets/converted"
 echo ""
 
 echo "## Starting local server for previewing the site..."
