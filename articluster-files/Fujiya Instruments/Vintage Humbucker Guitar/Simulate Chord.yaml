@@ -1,30 +1,32 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 90c08d83-3528-4b3e-2aa9-e9cdc3ea88e9
 Author: R-Koubou
 ManufacturerName: Fujiya Instruments
 ProductName: Vintage Humbucker Guitar
 PatchName: Simulate Chord
 Description: Fujiya Instruments Vintage Humbucker Guitar - Simulate Chord
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Position 1
-    MidiMessages:
-      - Status: 144
-        Data1: 72
-        Data2: 120
-  - Name: Position 2
-    MidiMessages:
-      - Status: 144
-        Data1: 73
-        Data2: 120
-  - Name: Position 3
-    MidiMessages:
-      - Status: 144
-        Data1: 74
-        Data2: 120
-  - Name: Position 4
-    MidiMessages:
-      - Status: 144
-        Data1: 75
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Position 1
+        MidiMessages:
+          - Status: 144
+            Data1: 72
+            Data2: 120
+      - Name: Position 2
+        MidiMessages:
+          - Status: 144
+            Data1: 73
+            Data2: 120
+      - Name: Position 3
+        MidiMessages:
+          - Status: 144
+            Data1: 74
+            Data2: 120
+      - Name: Position 4
+        MidiMessages:
+          - Status: 144
+            Data1: 75
+            Data2: 120

@@ -1,205 +1,207 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 97c824b7-7f97-96ae-7419-343c866e9ada
 Author: R-Koubou
 ManufacturerName: Auddict
 ProductName: Virtuoso Violin
 PatchName: Main
 Description: Auddict Virtuoso Violin - Main
-Articulations:
-  - Name: '** is Attribute!'
-    MidiMessages: []
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Idle
-    MidiMessages: []
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Norm
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Stutter
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Cresc
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: FP
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Marc
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: '**Slub'
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Attribute
-  - Name: '**Bow'
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Attribute
-  - Name: '**Port'
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Attribute
-  - Name: '**Fast'
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Attribute
-  - Name: 2Gracc DN ST
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: 2Gracc DN TS
-    MidiMessages:
-      - Status: 144
-        Data1: 34
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: 2Gracc UP ST
-    MidiMessages:
-      - Status: 144
-        Data1: 35
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: 2Gracc UP TS
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Gracc DN S
-    MidiMessages:
-      - Status: 144
-        Data1: 37
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Gracc DN T
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Gracc UP S
-    MidiMessages:
-      - Status: 144
-        Data1: 39
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Gracc UP T
-    MidiMessages:
-      - Status: 144
-        Data1: 40
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Octave Up
-    MidiMessages:
-      - Status: 144
-        Data1: 41
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 42
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Spiccato
-    MidiMessages:
-      - Status: 144
-        Data1: 43
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Stacc-STR
-    MidiMessages:
-      - Status: 144
-        Data1: 44
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Maj Chord
-    MidiMessages:
-      - Status: 144
-        Data1: 45
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Min Chord
-    MidiMessages:
-      - Status: 144
-        Data1: 46
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 47
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 48
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Trill T
-    MidiMessages:
-      - Status: 144
-        Data1: 49
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
-  - Name: Trill S
-    MidiMessages:
-      - Status: 144
-        Data1: 50
-        Data2: 120
-    Extra:
-      Cubase.ArticulationType: Direction
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: '** is Attribute!'
+        MidiMessages: []
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Idle
+        MidiMessages: []
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Norm
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Stutter
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Cresc
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: FP
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Marc
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: '**Slub'
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Attribute
+      - Name: '**Bow'
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Attribute
+      - Name: '**Port'
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Attribute
+      - Name: '**Fast'
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Attribute
+      - Name: 2Gracc DN ST
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: 2Gracc DN TS
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: 2Gracc UP ST
+        MidiMessages:
+          - Status: 144
+            Data1: 35
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: 2Gracc UP TS
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Gracc DN S
+        MidiMessages:
+          - Status: 144
+            Data1: 37
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Gracc DN T
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Gracc UP S
+        MidiMessages:
+          - Status: 144
+            Data1: 39
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Gracc UP T
+        MidiMessages:
+          - Status: 144
+            Data1: 40
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Octave Up
+        MidiMessages:
+          - Status: 144
+            Data1: 41
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 42
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Spiccato
+        MidiMessages:
+          - Status: 144
+            Data1: 43
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Stacc-STR
+        MidiMessages:
+          - Status: 144
+            Data1: 44
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Maj Chord
+        MidiMessages:
+          - Status: 144
+            Data1: 45
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Min Chord
+        MidiMessages:
+          - Status: 144
+            Data1: 46
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 47
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 48
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Trill T
+        MidiMessages:
+          - Status: 144
+            Data1: 49
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction
+      - Name: Trill S
+        MidiMessages:
+          - Status: 144
+            Data1: 50
+            Data2: 120
+        Extra:
+          Cubase.ArticulationType: Direction

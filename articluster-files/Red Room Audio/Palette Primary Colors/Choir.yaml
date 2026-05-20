@@ -1,40 +1,42 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: b6d3c779-5a3b-7152-4fbd-0fe0fde0bb14
 Author: R-Koubou
 ManufacturerName: Red Room Audio
 ProductName: Palette Primary Colors
 PatchName: Choir
 Description: Red Room Audio Palette Primary Colors - Choir
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: AH Sus
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: AH Stac
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: OH Sus
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: OH Stac
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MM Sus
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MM Stac
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Choir
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: AH Sus
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: AH Stac
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: OH Sus
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: OH Stac
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MM Sus
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MM Stac
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

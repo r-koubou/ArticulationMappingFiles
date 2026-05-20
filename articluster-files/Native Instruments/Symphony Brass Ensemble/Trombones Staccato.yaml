@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: c88ec010-6cf6-c775-6178-650322c70343
 Author: R-Koubou
 ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Trombones Staccato
 Description: Native Instruments Symphony Brass Ensemble - Trombones Staccato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Staccato p
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Staccato F
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Staccato Velocity
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Stac. Dbl. Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Stac. Triple Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Stac. Bend Down
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Staccato Bend Up
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Trombones Staccato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Staccato p
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Staccato F
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Staccato Velocity
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Stac. Dbl. Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Stac. Triple Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Stac. Bend Down
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Staccato Bend Up
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

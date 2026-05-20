@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 897598eb-2ddc-e627-225e-83b5e4f90669
 Author: R-Koubou
 ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Trombones
 Description: Native Instruments Symphony Brass Ensemble - Trombones
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain All
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Sust. Bend Up
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Sust, Trill Tongued
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Stac. Trilple Tongue
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Sforzando
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Swell
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Blast FFF
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Trombones
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain All
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Sust. Bend Up
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Sust, Trill Tongued
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Stac. Trilple Tongue
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Sforzando
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Swell
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Blast FFF
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

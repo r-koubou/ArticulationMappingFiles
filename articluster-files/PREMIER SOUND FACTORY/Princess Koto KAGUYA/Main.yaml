@@ -1,90 +1,92 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: d4d2c0af-bca2-d3b8-b123-714722654b01
 Author: R-Koubou
 ManufacturerName: PREMIER SOUND FACTORY
 ProductName: Princess Koto KAGUYA
-PatchName: En
+PatchName: Main
 Description: PREMIER SOUND FACTORY Princess Koto KAGUYA - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Real
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
-  - Name: Normal
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
-  - Name: Mute
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
-  - Name: Upward Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 120
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 19
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 21
-        Data2: 120
-  - Name: Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 23
-        Data2: 120
-  - Name: Bend Up
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Bend Up(Semitone)
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Bend Down
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Bend Down(Semitone)
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Bend 1
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
-  - Name: Bend 2
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 120
-  - Name: Alternate
-    MidiMessages:
-      - Status: 144
-        Data1: 35
-        Data2: 120
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: FX
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Real
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: Normal
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Upward Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 120
+      - Name: Bend Up
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Bend Up(Semitone)
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Bend Down
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Bend Down(Semitone)
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Bend 1
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: Bend 2
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 120
+      - Name: Alternate
+        MidiMessages:
+          - Status: 144
+            Data1: 35
+            Data2: 120
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: FX
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120

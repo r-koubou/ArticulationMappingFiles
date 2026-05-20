@@ -1,25 +1,27 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 33805de6-d7e7-9032-cc69-2dc0aaf52da3
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Lacrimosa Choir
 PatchName: Non Tonal
 Description: 8DIO Lacrimosa Choir - Non Tonal
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SLOW
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: NOMAL
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: FAST
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
+ArticulationGroups:
+  - Name: Non Tonal
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SLOW
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: NOMAL
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: FAST
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120

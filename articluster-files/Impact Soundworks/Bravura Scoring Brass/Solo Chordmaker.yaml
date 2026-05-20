@@ -1,30 +1,32 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 53f094a9-f757-52d6-edd9-f065f760f438
 Author: R-Koubou
 ManufacturerName: Impact Soundworks
 ProductName: Bravura Scoring Brass
 PatchName: Solo Chordmaker
 Description: Impact Soundworks Bravura Scoring Brass - Solo Chordmaker
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Tenuto
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
+ArticulationGroups:
+  - Name: Solo Chordmaker
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Tenuto
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120

@@ -1,40 +1,42 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 5762c96b-fbca-b414-f04b-51a3157a4a4d
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Strings Long
 Description: 8DIO 8W Silver Edition - Strings Long
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SUSTAIN MW
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: POWER SUSTAIN MW
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: ARC P-F-P
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: ARC MP-F-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: ARC FF-F-FF
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
-  - Name: ARC MP MF
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings Long
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SUSTAIN MW
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: POWER SUSTAIN MW
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: ARC P-F-P
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: ARC MP-F-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: ARC FF-F-FF
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120
+      - Name: ARC MP MF
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 120

@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 3664ded5-dacc-354a-d04d-d3d9418c5371
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Alto Flute Virtuoso
 PatchName: Leg Strong
 Description: 8DIO Claire Alto Flute Virtuoso - Leg Strong
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: NATURAL
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: SOFT 1
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: SOFT 2
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MEDIUM
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: STRONG
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: SUS XFADE
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: STACMO
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Leg Strong
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: NATURAL
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: SOFT 1
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: SOFT 2
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MEDIUM
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: STRONG
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: SUS XFADE
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: STACMO
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

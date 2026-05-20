@@ -1,35 +1,37 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: e28ee150-ca5d-e174-bfdf-7e03430759fb
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Strings Shorts
 Description: 8DIO Majestica - Strings Shorts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SPICCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: SPICCATO FAST
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: COLLEGNO
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
-  - Name: BARTOR
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings Shorts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SPICCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: SPICCATO FAST
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: COLLEGNO
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120
+      - Name: BARTOR
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 120

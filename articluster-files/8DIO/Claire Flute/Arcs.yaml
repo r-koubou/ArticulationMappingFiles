@@ -1,40 +1,42 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 18823c98-0052-1768-f5d3-b5f79e4f79b1
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Flute
 PatchName: Arcs
 Description: 8DIO Claire Flute - Arcs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: P-MP-P
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MP-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MP-MF MV
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MP-F MV
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MF-FF MV
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: P-FF MV SHRT
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Arcs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: P-MP-P
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MP-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MP-MF MV
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MP-F MV
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MF-FF MV
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: P-FF MV SHRT
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

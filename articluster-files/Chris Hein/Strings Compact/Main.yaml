@@ -1,55 +1,57 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 98f8c8e9-9c22-48d9-9a75-c93e9e1585bf
 Author: R-Koubou
 ManufacturerName: Chris Hein
 ProductName: Strings Compact
 PatchName: Main
 Description: Chris Hein Strings Compact - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain Vibrato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 100
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 100
-  - Name: Dynamic Expression Long
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 100
-  - Name: Trill Minor
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 100
-  - Name: Pizzcato Loose
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 100
-  - Name: Short 1
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 100
-  - Name: Short 3
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 100
-  - Name: Spicato 5
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 100
-  - Name: Spicato 6
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain Vibrato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 100
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Dynamic Expression Long
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Trill Minor
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: Pizzcato Loose
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 100
+      - Name: Short 1
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 100
+      - Name: Short 3
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 100
+      - Name: Spicato 5
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 100
+      - Name: Spicato 6
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 100

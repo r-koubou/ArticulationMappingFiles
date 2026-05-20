@@ -1,35 +1,37 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: bb1703ad-a3e7-18c9-9868-b65850bbb09e
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: 8W Silver Edition
 PatchName: Percussion Low
 Description: 8DIO 8W Silver Edition - Percussion Low
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: TOM TOMS
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: GRAN CASAS
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: TIMPANI HITS
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: TIMPANI ROLLS
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: TIMPANI CRESC
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
+ArticulationGroups:
+  - Name: Percussion Low
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: TOM TOMS
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: GRAN CASAS
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: TIMPANI HITS
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: TIMPANI ROLLS
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: TIMPANI CRESC
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120

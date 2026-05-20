@@ -1,25 +1,27 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: ab2635fb-4f8e-aa0d-4410-04336b61d5e7
 Author: R-Koubou
 ManufacturerName: Three Body Technology
 ProductName: Heavier7Strings
 PatchName: Stop
 Description: Three Body Technology Heavier7Strings - Stop
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Stop (Slide)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 127
-  - Name: Stop (Left Hand)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 60
-  - Name: Stop (Right Hand)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 10
+ArticulationGroups:
+  - Name: Stop
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Stop (Slide)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 127
+      - Name: Stop (Left Hand)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 60
+      - Name: Stop (Right Hand)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 10

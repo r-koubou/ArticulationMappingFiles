@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 4c99dc07-f001-4b7f-e582-e90e3ebe402a
 Author: R-Koubou
 ManufacturerName: VERSUS Audio
 ProductName: VS-VSEG
 PatchName: Strings
 Description: VERSUS Audio VS-VSEG - Strings
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Auto
-    MidiMessages:
-      - Status: 144
-        Data1: 96
-        Data2: 120
-  - Name: 1Str
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: 2Str
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: 3Str
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: 4Str
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: 5Str
-    MidiMessages:
-      - Status: 144
-        Data1: 99
-        Data2: 120
-  - Name: 6Str
-    MidiMessages:
-      - Status: 144
-        Data1: 98
-        Data2: 120
-  - Name: 7Str
-    MidiMessages:
-      - Status: 144
-        Data1: 97
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto
+        MidiMessages:
+          - Status: 144
+            Data1: 96
+            Data2: 120
+      - Name: 1Str
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: 2Str
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: 3Str
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: 4Str
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: 5Str
+        MidiMessages:
+          - Status: 144
+            Data1: 99
+            Data2: 120
+      - Name: 6Str
+        MidiMessages:
+          - Status: 144
+            Data1: 98
+            Data2: 120
+      - Name: 7Str
+        MidiMessages:
+          - Status: 144
+            Data1: 97
+            Data2: 120

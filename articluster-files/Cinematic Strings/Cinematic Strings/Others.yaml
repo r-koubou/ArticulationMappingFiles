@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 28ba61bf-cc22-856c-c1a3-22fbaecef364
 Author: R-Koubou
 ManufacturerName: Cinematic Strings
 ProductName: Cinematic Strings
 PatchName: Others
 Description: Cinematic Strings Cinematic Strings - Others
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Arco
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Half trill
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Whole trill
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Run mode
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: Pizzicato
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Others
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Arco
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Half trill
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Whole trill
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Run mode
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Pizzicato
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

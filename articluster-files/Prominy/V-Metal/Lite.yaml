@@ -1,175 +1,177 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 8a46a53e-2ead-e7f8-232f-8586f24d9522
 Author: R-Koubou
 ManufacturerName: Prominy
 ProductName: V-Metal
 PatchName: Lite
 Description: Prominy V-Metal - Lite
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Stop(Vel:100)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 100
-  - Name: Stop(Vel:50)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 50
-  - Name: Stop(Vel:25)
-    MidiMessages:
-      - Status: 144
-        Data1: 33
-        Data2: 25
-  - Name: Stop(Noise Vel:100)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 100
-  - Name: Stop(Noise Vel:50)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 50
-  - Name: Stop(Noise Vel:25)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 25
-  - Name: Repeat/Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 120
-  - Name: Power Code
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: sus4 Realtime
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: add9
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: Picking Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Octave
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Trill (whole step)
-    MidiMessages:
-      - Status: 144
-        Data1: 23
-        Data2: 120
-  - Name: Trill (half step)
-    MidiMessages:
-      - Status: 144
-        Data1: 22
-        Data2: 120
-  - Name: 6th-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 21
-        Data2: 120
-  - Name: '#5th-dyad chord'
-    MidiMessages:
-      - Status: 144
-        Data1: 20
-        Data2: 120
-  - Name: 5th-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 19
-        Data2: 120
-  - Name: Flat 5th-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 18
-        Data2: 120
-  - Name: 4th-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 17
-        Data2: 120
-  - Name: Major- 3rd-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 120
-  - Name: Minor 3rd-dyad chord
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 120
-  - Name: Single no legato
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 120
-  - Name: Single(Ham&Prn)
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 120
-  - Name: Single note(Legato)
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 120
-  - Name: Unison bend
-    MidiMessages:
-      - Status: 144
-        Data1: 11
-        Data2: 120
-  - Name: Double bend
-    MidiMessages:
-      - Status: 144
-        Data1: 10
-        Data2: 120
-  - Name: Other chords (‘Rush chords’)
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 120
-  - Name: Major 3rd vibrato
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 120
-  - Name: Natural harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 120
-  - Name: FX1 - scrape, slides, noises
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 120
-  - Name: FX2 - whammy bar
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 120
-  - Name: FX3 - whammy bar
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 120
-  - Name: FX4 - whammy bar
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 120
+ArticulationGroups:
+  - Name: Lite
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Stop(Vel:100)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 100
+      - Name: Stop(Vel:50)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 50
+      - Name: Stop(Vel:25)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 25
+      - Name: Stop(Noise Vel:100)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 100
+      - Name: Stop(Noise Vel:50)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 50
+      - Name: Stop(Noise Vel:25)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 25
+      - Name: Repeat/Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 120
+      - Name: Power Code
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: sus4 Realtime
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: add9
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Picking Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Octave
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Trill (whole step)
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 120
+      - Name: Trill (half step)
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 120
+      - Name: 6th-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+      - Name: '#5th-dyad chord'
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 120
+      - Name: 5th-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120
+      - Name: Flat 5th-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 120
+      - Name: 4th-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120
+      - Name: Major- 3rd-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Minor 3rd-dyad chord
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120
+      - Name: Single no legato
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Single(Ham&Prn)
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 120
+      - Name: Single note(Legato)
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: Unison bend
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 120
+      - Name: Double bend
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 120
+      - Name: Other chords (‘Rush chords’)
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 120
+      - Name: Major 3rd vibrato
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 120
+      - Name: Natural harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: FX1 - scrape, slides, noises
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: FX2 - whammy bar
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 120
+      - Name: FX3 - whammy bar
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 120
+      - Name: FX4 - whammy bar
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 120

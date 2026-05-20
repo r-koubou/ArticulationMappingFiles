@@ -1,25 +1,27 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 031877f0-a780-60ca-9c01-fd59c3fe11fa
 Author: R-Koubou
 ManufacturerName: Solemn Tones
 ProductName: The Loki Bass
 PatchName: Picking
 Description: Solemn Tones The Loki Bass - Picking
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Alt Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: Down Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: Up Picking
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
+ArticulationGroups:
+  - Name: Picking
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Alt Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Down Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Up Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120

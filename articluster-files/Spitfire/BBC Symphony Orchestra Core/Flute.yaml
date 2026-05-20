@@ -1,55 +1,57 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 96f38b28-87e5-4797-b1c7-f34a03fd2ddd
 Author: R-Koubou
 ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Flute
 Description: Spitfire BBC Symphony Orchestra Core - Flute
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Legato(Etended)
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Long
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
-  - Name: Trill Major 2nd
-    MidiMessages:
-      - Status: 144
-        Data1: 2
-        Data2: 100
-  - Name: Trill Minor 2nd
-    MidiMessages:
-      - Status: 144
-        Data1: 3
-        Data2: 100
-  - Name: Staccatissimo
-    MidiMessages:
-      - Status: 144
-        Data1: 4
-        Data2: 100
-  - Name: Tenuto
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 100
-  - Name: Marcato
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 100
-  - Name: Long Flutter
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 100
-  - Name: Multi Toungue
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 100
+ArticulationGroups:
+  - Name: Flute
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Legato(Etended)
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Long
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100
+      - Name: Trill Major 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 100
+      - Name: Trill Minor 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 100
+      - Name: Staccatissimo
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 100
+      - Name: Tenuto
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 100
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 100
+      - Name: Long Flutter
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 100
+      - Name: Multi Toungue
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 100

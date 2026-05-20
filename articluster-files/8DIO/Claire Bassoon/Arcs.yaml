@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: fe61ee90-e631-fd47-dbb2-9ad651476287
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Bassoon
 PatchName: Arcs
 Description: 8DIO Claire Bassoon - Arcs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: PP-P-P
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: P-MP-P
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MP-MF-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MF-F-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: MP-F-MF
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MP-F-MP
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: MF-FF-MF
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: F-FF-F
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Arcs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: PP-P-P
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: P-MP-P
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MP-MF-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MF-F-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: MP-F-MF
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MP-F-MP
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: MF-FF-MF
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: F-FF-F
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

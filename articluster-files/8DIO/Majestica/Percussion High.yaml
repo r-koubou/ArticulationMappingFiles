@@ -1,35 +1,37 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 30a49935-d40c-eb22-c98d-88b1d09bf138
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Percussion High
 Description: 8DIO Majestica - Percussion High
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: SMALL SNARES
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: LARGE SNARES
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: TAMBOURINES
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: ANVILS
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: STICKS / CLAPS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
+ArticulationGroups:
+  - Name: Percussion High
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: SMALL SNARES
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: LARGE SNARES
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: TAMBOURINES
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: ANVILS
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: STICKS / CLAPS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120

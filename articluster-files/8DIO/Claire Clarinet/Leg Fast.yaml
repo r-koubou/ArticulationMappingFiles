@@ -1,50 +1,52 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 121500d4-b67d-11fb-abfe-af8a628b2b6d
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Clarinet
 PatchName: Leg Fast
 Description: 8DIO Claire Clarinet - Leg Fast
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: NATURAL
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MEDIUM
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: STRONG 1
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: STRONG 2
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: VIBRATO
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: HEAVY VIBRATO
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
-  - Name: STACMO
-    MidiMessages:
-      - Status: 144
-        Data1: 30
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 31
-        Data2: 120
+ArticulationGroups:
+  - Name: Leg Fast
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: NATURAL
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MEDIUM
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: STRONG 1
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: STRONG 2
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: VIBRATO
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: HEAVY VIBRATO
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: STACMO
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120

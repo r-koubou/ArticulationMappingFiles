@@ -1,35 +1,37 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 48922e60-ecf9-a544-e17b-43d37a6fff72
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Clarinet
 PatchName: General Arts
 Description: 8DIO Claire Clarinet - General Arts
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: STACMO
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: SUS VEL
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MIN 2ND TRILLS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: MAJ 2ND TRILLS
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: General Arts
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: STACMO
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: SUS VEL
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MIN 2ND TRILLS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: MAJ 2ND TRILLS
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

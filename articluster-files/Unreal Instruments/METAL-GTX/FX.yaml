@@ -1,55 +1,57 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: ad1b6b20-5182-0acd-4604-a85bb72e589e
 Author: R-Koubou
 ManufacturerName: Unreal Instruments
 ProductName: METAL-GTX
 PatchName: FX
 Description: Unreal Instruments METAL-GTX - FX
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Slide FX D
-    MidiMessages:
-      - Status: 144
-        Data1: 5
-        Data2: 100
-  - Name: Slide FX U
-    MidiMessages:
-      - Status: 144
-        Data1: 6
-        Data2: 100
-  - Name: Slide FX Wow
-    MidiMessages:
-      - Status: 144
-        Data1: 7
-        Data2: 100
-  - Name: Pick Scratch
-    MidiMessages:
-      - Status: 144
-        Data1: 8
-        Data2: 100
-  - Name: Natural Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 9
-        Data2: 100
-  - Name: Picking Harmonics
-    MidiMessages:
-      - Status: 144
-        Data1: 10
-        Data2: 100
-  - Name: Brush Down
-    MidiMessages:
-      - Status: 144
-        Data1: 11
-        Data2: 100
-  - Name: Brush Up
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Brush Alt
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
+ArticulationGroups:
+  - Name: FX
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Slide FX D
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 100
+      - Name: Slide FX U
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 100
+      - Name: Slide FX Wow
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 100
+      - Name: Pick Scratch
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 100
+      - Name: Natural Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 100
+      - Name: Picking Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 100
+      - Name: Brush Down
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 100
+      - Name: Brush Up
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Brush Alt
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100

@@ -1,0 +1,121 @@
+FormatVersion: 0
+Id: 00fb3d50-a463-5dad-99e4-fb3c895fd7f4
+Author: R-Koubou
+ManufacturerName: Fujiya Instruments
+ProductName: Vintage Humbucker Guitar
+PatchName: Poly
+Description: Fujiya Instruments Vintage Humbucker Guitar - Poly
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Slide Up
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+      - Name: Slide Down
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 120
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 120
+      - Name: Trill (Half)
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120
+      - Name: Trill (Whole)
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Unison Bend
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120
+      - Name: Quarter Bend
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 120
+      - Name: Chop
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120
+      - Name: N Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 120
+      - Name: P Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+      - Name: Pick Scrape
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 120
+      - Name: Glissando Up/Down
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 120
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Palm Mute (hard)
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Palm Mute (soft)
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Brush
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+  - Name: Other
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto Alternate
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: Always Down
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: Always Up
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 120
+      - Name: Pull Off
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 64
+      - Name: Hammer On
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 65

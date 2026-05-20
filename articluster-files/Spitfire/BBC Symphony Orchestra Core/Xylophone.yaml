@@ -1,20 +1,22 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 0afd795d-a892-4635-976b-4a8bb9f0d5b2
 Author: R-Koubou
 ManufacturerName: Spitfire
 ProductName: BBC Symphony Orchestra Core
 PatchName: Xylophone
 Description: Spitfire BBC Symphony Orchestra Core - Xylophone
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Hits
-    MidiMessages:
-      - Status: 144
-        Data1: 0
-        Data2: 100
-  - Name: Rolls
-    MidiMessages:
-      - Status: 144
-        Data1: 1
-        Data2: 100
+ArticulationGroups:
+  - Name: Xylophone
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Hits
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 100
+      - Name: Rolls
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 100

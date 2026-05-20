@@ -1,0 +1,224 @@
+FormatVersion: 0
+Id: c5ab2c82-6913-225e-5f95-c0ec789140b8
+Author: R-Koubou
+ManufacturerName: Fujiya Instruments
+ProductName: Vintage Humbucker Guitar
+PatchName: Riff
+Description: Fujiya Instruments Vintage Humbucker Guitar - Riff
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: P Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+      - Name: Pick Scrape
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 120
+      - Name: Glissando Up/Down
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 120
+      - Name: Sustain(H&P)
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Sustain(Slide)
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Palm Mute (hard)
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: Palm Mute (soft)
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Brush
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+  - Name: Stop
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Noiseless Vel 15
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 15
+      - Name: Noiseless Vel 31
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 31
+      - Name: Noiseless Vel 47
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 47
+      - Name: Noiseless Vel 63
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 63
+      - Name: Noiseless Vel 79
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 79
+      - Name: Noiseless Vel 95
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 95
+      - Name: Noiseless Vel 111
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 111
+      - Name: Noiseless Vel 127
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 127
+      - Name: Noise (Rnd) Vel 15
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 15
+      - Name: Noise (Rnd) Vel 31
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 31
+      - Name: Noise (Rnd) Vel 47
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 47
+      - Name: Noise (Rnd) Vel 63
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 63
+      - Name: Noise (Rnd) Vel 79
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 79
+      - Name: Noise (Rnd) Vel 95
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 95
+      - Name: Noise (Rnd) Vel 111
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 111
+      - Name: Noise (Rnd) Vel 127
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 127
+  - Name: Chord
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Single
+        MidiMessages:
+          - Status: 144
+            Data1: 0
+            Data2: 120
+      - Name: Minor 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 1
+            Data2: 120
+      - Name: Major 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 2
+            Data2: 120
+      - Name: Minor 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 3
+            Data2: 120
+      - Name: Major 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 4
+            Data2: 120
+      - Name: Perfect 4th
+        MidiMessages:
+          - Status: 144
+            Data1: 5
+            Data2: 120
+      - Name: Diminished 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 6
+            Data2: 120
+      - Name: Perfect 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 7
+            Data2: 120
+      - Name: Augmented 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 8
+            Data2: 120
+      - Name: Major 6th
+        MidiMessages:
+          - Status: 144
+            Data1: 9
+            Data2: 120
+      - Name: Minor 7th
+        MidiMessages:
+          - Status: 144
+            Data1: 10
+            Data2: 120
+      - Name: Major 7th
+        MidiMessages:
+          - Status: 144
+            Data1: 11
+            Data2: 120
+      - Name: Perfect Octave
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 120
+  - Name: Other
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Auto Alternate
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 120
+      - Name: Always Down
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120
+      - Name: Always Up
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 120

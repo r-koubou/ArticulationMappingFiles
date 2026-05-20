@@ -1,40 +1,42 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 09210c22-ad88-66d3-a20a-04625831a1d6
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Claire Flute
 PatchName: Bonus FX Runs
 Description: 8DIO Claire Flute - Bonus FX Runs
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: MAJ RUN
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: MAJ RUN 2 OCT
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: MIN RUN
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: MIN RUN 2 OCT
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: BREATHS
-    MidiMessages:
-      - Status: 144
-        Data1: 28
-        Data2: 120
-  - Name: VALVE CLICKS
-    MidiMessages:
-      - Status: 144
-        Data1: 29
-        Data2: 120
+ArticulationGroups:
+  - Name: Bonus FX Runs
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: MAJ RUN
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: MAJ RUN 2 OCT
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: MIN RUN
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: MIN RUN 2 OCT
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: BREATHS
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: VALVE CLICKS
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120

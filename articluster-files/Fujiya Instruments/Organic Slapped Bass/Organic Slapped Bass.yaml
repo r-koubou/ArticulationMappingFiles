@@ -1,0 +1,169 @@
+FormatVersion: 0
+Id: 2927c0ad-ce8f-86d9-c311-24680dbc078b
+Author: R-Koubou
+ManufacturerName: Fujiya Instruments
+ProductName: Organic Slapped Bass
+PatchName: Slapped Bass
+Description: Fujiya Instruments Organic Slapped Bass
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain & Hamm Pull
+        MidiMessages:
+          - Status: 144
+            Data1: 17
+            Data2: 120
+      - Name: Sustain & Slide
+        MidiMessages:
+          - Status: 144
+            Data1: 18
+            Data2: 120
+      - Name: Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 19
+            Data2: 120
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 20
+            Data2: 120
+      - Name: Gliss Up
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+      - Name: Gliss Down
+        MidiMessages:
+          - Status: 144
+            Data1: 22
+            Data2: 120
+  - Name: Stop
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Slide Down (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 31
+      - Name: Slide Down (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 64
+      - Name: Slide Down (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 96
+      - Name: Slide Down (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 127
+      - Name: Left Hand Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 31
+      - Name: Left Hand Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 64
+      - Name: Left Hand Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 96
+      - Name: Left Hand Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 127
+      - Name: Noiseless Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 31
+      - Name: Noiseless Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 64
+      - Name: Noiseless Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 96
+      - Name: Noiseless Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 127
+      - Name: Mute Stop (vel 31)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 31
+      - Name: Mute Stop (vel 64)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 64
+      - Name: Mute Stop (vel 96)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 96
+      - Name: Mute Stop (vel 127)
+        MidiMessages:
+          - Status: 144
+            Data1: 34
+            Data2: 127
+  - Name: Thumb
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Pull
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 120
+      - Name: Thumb
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 120
+  - Name: String
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: String - Auto
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: String - 1st
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: String - 2nd
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: String - 3rd
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: String - 4th
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120

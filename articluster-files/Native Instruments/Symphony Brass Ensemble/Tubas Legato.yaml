@@ -1,30 +1,32 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 3bf7463b-df5f-98a9-d4e0-3538934901b9
 Author: R-Koubou
 ManufacturerName: Native Instruments
 ProductName: Symphony Brass Ensemble
 PatchName: Tubas Legato
 Description: Native Instruments Symphony Brass Ensemble - Tubas Legato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: True Legato
-    MidiMessages:
-      - Status: 144
-        Data1: 24
-        Data2: 120
-  - Name: True Legato p
-    MidiMessages:
-      - Status: 144
-        Data1: 25
-        Data2: 120
-  - Name: True Legato mf
-    MidiMessages:
-      - Status: 144
-        Data1: 26
-        Data2: 120
-  - Name: True Legato F
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
+ArticulationGroups:
+  - Name: Tubas Legato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: True Legato
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: True Legato p
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: True Legato mf
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: True Legato F
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120

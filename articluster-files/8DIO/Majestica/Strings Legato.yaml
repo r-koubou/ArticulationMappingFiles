@@ -1,40 +1,42 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 3be3b93f-23b3-3ac9-1835-d8581bf629b6
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Majestica
 PatchName: Strings Legato
 Description: 8DIO Majestica - Strings Legato
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: NATURAL
-    MidiMessages:
-      - Status: 144
-        Data1: 100
-        Data2: 120
-  - Name: SUS XFADE
-    MidiMessages:
-      - Status: 144
-        Data1: 101
-        Data2: 120
-  - Name: MEDIUM 1
-    MidiMessages:
-      - Status: 144
-        Data1: 102
-        Data2: 120
-  - Name: MEDIUM 2
-    MidiMessages:
-      - Status: 144
-        Data1: 103
-        Data2: 120
-  - Name: STRONG 1
-    MidiMessages:
-      - Status: 144
-        Data1: 104
-        Data2: 120
-  - Name: MARCATO
-    MidiMessages:
-      - Status: 144
-        Data1: 105
-        Data2: 120
+ArticulationGroups:
+  - Name: Strings Legato
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: NATURAL
+        MidiMessages:
+          - Status: 144
+            Data1: 100
+            Data2: 120
+      - Name: SUS XFADE
+        MidiMessages:
+          - Status: 144
+            Data1: 101
+            Data2: 120
+      - Name: MEDIUM 1
+        MidiMessages:
+          - Status: 144
+            Data1: 102
+            Data2: 120
+      - Name: MEDIUM 2
+        MidiMessages:
+          - Status: 144
+            Data1: 103
+            Data2: 120
+      - Name: STRONG 1
+        MidiMessages:
+          - Status: 144
+            Data1: 104
+            Data2: 120
+      - Name: MARCATO
+        MidiMessages:
+          - Status: 144
+            Data1: 105
+            Data2: 120

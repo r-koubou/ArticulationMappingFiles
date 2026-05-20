@@ -1,35 +1,37 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: e6fe1a0e-8a65-43b0-7fe7-e13e661ca287
 Author: R-Koubou
 ManufacturerName: 8DIO
 ProductName: Acoustic Grand Ensembles Vol 1 Guitar
 PatchName: Main
 Description: 8DIO Acoustic Grand Ensembles Vol 1 Guitar - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Sustain
-    MidiMessages:
-      - Status: 144
-        Data1: 12
-        Data2: 100
-  - Name: Staccato
-    MidiMessages:
-      - Status: 144
-        Data1: 13
-        Data2: 100
-  - Name: Plucked
-    MidiMessages:
-      - Status: 144
-        Data1: 14
-        Data2: 100
-  - Name: Tremolo
-    MidiMessages:
-      - Status: 144
-        Data1: 15
-        Data2: 100
-  - Name: Harmonic
-    MidiMessages:
-      - Status: 144
-        Data1: 16
-        Data2: 100
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Sustain
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Staccato
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Plucked
+        MidiMessages:
+          - Status: 144
+            Data1: 14
+            Data2: 100
+      - Name: Tremolo
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 100
+      - Name: Harmonic
+        MidiMessages:
+          - Status: 144
+            Data1: 16
+            Data2: 100

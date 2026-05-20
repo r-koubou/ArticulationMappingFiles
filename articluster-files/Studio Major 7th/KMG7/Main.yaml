@@ -1,65 +1,67 @@
-FormatVersion: 1
+FormatVersion: 0
 Id: 07965b25-abfe-6449-a080-02d7a734c8d2
 Author: R-Koubou
 ManufacturerName: Studio Major 7th
 ProductName: KMG7
 PatchName: Main
 Description: Studio Major 7th KMG7 - Main
-Articulations:
-  - Name: Idle
-    MidiMessages: []
-  - Name: Solo
-    MidiMessages:
-      - Status: 144
-        Data1: 43
-        Data2: 120
-  - Name: Solo(Mute)
-    MidiMessages:
-      - Status: 144
-        Data1: 44
-        Data2: 120
-  - Name: Solo(16beat)
-    MidiMessages:
-      - Status: 144
-        Data1: 32
-        Data2: 120
-  - Name: Power Chord
-    MidiMessages:
-      - Status: 144
-        Data1: 36
-        Data2: 120
-  - Name: Power Chord(Mute)
-    MidiMessages:
-      - Status: 144
-        Data1: 37
-        Data2: 120
-  - Name: Power Chord 5th
-    MidiMessages:
-      - Status: 144
-        Data1: 38
-        Data2: 120
-  - Name: Power Chord 5th(Mute)
-    MidiMessages:
-      - Status: 144
-        Data1: 39
-        Data2: 120
-  - Name: Power Chord 5th(16beat)
-    MidiMessages:
-      - Status: 144
-        Data1: 27
-        Data2: 120
-  - Name: Power Chord 4th
-    MidiMessages:
-      - Status: 144
-        Data1: 41
-        Data2: 120
-  - Name: Power Chord 4th(Mute)
-    MidiMessages:
-      - Status: 144
-        Data1: 42
-        Data2: 120
-  - Name: All Note Off
-    MidiMessages:
-      - Status: 144
-        Data1: 21
-        Data2: 120
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Solo
+        MidiMessages:
+          - Status: 144
+            Data1: 43
+            Data2: 120
+      - Name: Solo(Mute)
+        MidiMessages:
+          - Status: 144
+            Data1: 44
+            Data2: 120
+      - Name: Solo(16beat)
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 120
+      - Name: Power Chord
+        MidiMessages:
+          - Status: 144
+            Data1: 36
+            Data2: 120
+      - Name: Power Chord(Mute)
+        MidiMessages:
+          - Status: 144
+            Data1: 37
+            Data2: 120
+      - Name: Power Chord 5th
+        MidiMessages:
+          - Status: 144
+            Data1: 38
+            Data2: 120
+      - Name: Power Chord 5th(Mute)
+        MidiMessages:
+          - Status: 144
+            Data1: 39
+            Data2: 120
+      - Name: Power Chord 5th(16beat)
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Power Chord 4th
+        MidiMessages:
+          - Status: 144
+            Data1: 41
+            Data2: 120
+      - Name: Power Chord 4th(Mute)
+        MidiMessages:
+          - Status: 144
+            Data1: 42
+            Data2: 120
+      - Name: All Note Off
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
