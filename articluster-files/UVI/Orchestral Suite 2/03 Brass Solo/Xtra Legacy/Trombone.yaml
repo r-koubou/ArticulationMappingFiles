@@ -1,10 +1,10 @@
 FormatVersion: 0
-Id: 58a55e31-3f3f-4e2f-84b4-92af04398868
+Id: 328dbd78-6327-4468-a47b-b93fb3246a88
 Author: R-Koubou
 ManufacturerName: UVI
 ProductName: Orchestral Suite 2
-PatchName: Strings Solo - Xtra Legacy Cello
-Description: UVI Orchestral Suite 2 - Strings Solo Xtra Legacy Cello
+PatchName: Brass Solo - Xtra Legacy - Trombone
+Description: UVI Orchestral Suite 2 - Brass Solo - Xtra Legacy Trombone
 ArticulationGroups:
   - Name: Main
     Articulations:
@@ -15,13 +15,18 @@ ArticulationGroups:
           - Status: 144
             Data1: 24
             Data2: 100
-      - Name: Pizzicato
+      - Name: Staccato
         MidiMessages:
           - Status: 144
             Data1: 25
             Data2: 100
-      - Name: Marcato
+      - Name: Mute
         MidiMessages:
           - Status: 144
             Data1: 26
+            Data2: 100
+      - Name: Staccato Mute
+        MidiMessages:
+          - Status: 144
+            Data1: 27
             Data2: 100

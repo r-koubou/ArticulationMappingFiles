@@ -1,62 +1,72 @@
 FormatVersion: 0
-Id: e7ba5bd2-18b5-4ee9-aed3-0089fea1fe98
+Id: ae07fe04-1df3-4bd7-9c28-2fecd8767a20
 Author: R-Koubou
 ManufacturerName: UVI
 ProductName: Orchestral Suite 2
-PatchName: Strings Solo - Viola
-Description: UVI Orchestral Suite 2 - Strings Solo Viola
+PatchName: Strings Ensemble High
+Description: UVI Orchestral Suite 2 - Strings Ensemble High
 ArticulationGroups:
   - Name: Main
     Articulations:
       - Name: Idle
         MidiMessages: []
-      - Name: Sustain
+      - Name: Sustain Uni
         MidiMessages:
           - Status: 144
-            Data1: 24
+            Data1: 36
             Data2: 100
-      - Name: Sustain Vib
+      - Name: Sustain Uni FF
         MidiMessages:
           - Status: 144
-            Data1: 25
+            Data1: 37
+            Data2: 100
+      - Name: Sustain Oct
+        MidiMessages:
+          - Status: 144
+            Data1: 38
             Data2: 100
       - Name: Tremolo
         MidiMessages:
           - Status: 144
-            Data1: 26
+            Data1: 39
             Data2: 100
-      - Name: Sul Tasto
+      - Name: Col Legno
         MidiMessages:
           - Status: 144
-            Data1: 27
+            Data1: 40
             Data2: 100
-      - Name: Con Sordino
+      - Name: Marcato
         MidiMessages:
           - Status: 144
-            Data1: 28
+            Data1: 41
             Data2: 100
       - Name: Pizzicato
         MidiMessages:
           - Status: 144
-            Data1: 29
+            Data1: 42
             Data2: 100
-      - Name: Staccato
+      - Name: Staccato Oct
         MidiMessages:
           - Status: 144
-            Data1: 30
+            Data1: 43
             Data2: 100
-      - Name: Staccatissimo
+      - Name: Staccato Uni
         MidiMessages:
           - Status: 144
-            Data1: 31
+            Data1: 44
             Data2: 100
-      - Name: Trills Major
+      - Name: Bartok
         MidiMessages:
           - Status: 144
-            Data1: 32
+            Data1: 45
             Data2: 100
-      - Name: Trills Minor
+      - Name: Harmonic
         MidiMessages:
           - Status: 144
-            Data1: 33
+            Data1: 46
+            Data2: 100
+      - Name: Decrescendo
+        MidiMessages:
+          - Status: 144
+            Data1: 47
             Data2: 100
