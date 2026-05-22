@@ -3,6 +3,13 @@ name: Check YAML UUID Duplication
 on:
   pull_request:
 
+  push:
+    branches:
+      - develop
+      - feature/**
+      - fix/**
+      - refactor/**
+
   workflow_call:
   workflow_dispatch:
 
