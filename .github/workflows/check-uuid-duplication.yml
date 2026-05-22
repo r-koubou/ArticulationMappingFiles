@@ -1,0 +1,36 @@
+name: Check YAML UUID Duplication
+
+on:
+  pull_request:
+
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  check-yaml-uuid-duplication:
+    runs-on: ubuntu-latest
+
+    steps:
+    #----------------------------------------------------------
+    # Checkout repository
+    #----------------------------------------------------------
+    - name: Checkout
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+    #----------------------------------------------------------
+    # Setup dependency build tools from .prototools
+    #----------------------------------------------------------
+    - name: Setup Dependency Build Tools from .prototools
+      uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
+      with:
+        auto-install: true
+
+    #----------------------------------------------------------
+    # Check YAML UUID Duplication
+    #----------------------------------------------------------
+    - name: Check YAML UUID Duplication
+      run: |
+        pushd tools/check-uuid-duplication
+          uv sync
+          uv run python main.py ../../articluster-files
+        popd
