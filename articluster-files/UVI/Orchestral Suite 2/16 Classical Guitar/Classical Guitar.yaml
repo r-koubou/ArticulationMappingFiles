@@ -1,47 +1,52 @@
 FormatVersion: 0
-Id: a9ec2b70-6e71-4ecd-bef1-40994fd9625f
+Id: 63cd8cc0-f060-4799-9f1a-75988cccdb04
 Author: R-Koubou
 ManufacturerName: UVI
 ProductName: Orchestral Suite 2
-PatchName: Orchestra - Orchestra Strings Basic
-Description: UVI Orchestral Suite 2 - Orchestra Strings Basic
+PatchName: "16 Classical Guitar"
+Description: UVI Orchestral Suite 2 - Classical Guitar
 ArticulationGroups:
   - Name: Main
     Articulations:
       - Name: Idle
         MidiMessages: []
-      - Name: Sustain
+      - Name: Sustain Finger
         MidiMessages:
           - Status: 144
-            Data1: 36
+            Data1: 24
+            Data2: 100
+      - Name: Sustain Nails
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Sustain 2
+        MidiMessages:
+          - Status: 144
+            Data1: 26
             Data2: 100
       - Name: Pizzicato
         MidiMessages:
           - Status: 144
-            Data1: 37
+            Data1: 27
             Data2: 100
-      - Name: Marcato
+      - Name: Sul Ponte
         MidiMessages:
           - Status: 144
-            Data1: 38
+            Data1: 28
             Data2: 100
-      - Name: Tremolo
+      - Name: Sul Tasto
         MidiMessages:
           - Status: 144
-            Data1: 39
+            Data1: 29
             Data2: 100
-      - Name: Gliss
+      - Name: Harmonic
         MidiMessages:
           - Status: 144
-            Data1: 40
+            Data1: 30
             Data2: 100
-      - Name: Violas 5th
+      - Name: FX
         MidiMessages:
           - Status: 144
-            Data1: 41
-            Data2: 100
-      - Name: Chords
-        MidiMessages:
-          - Status: 144
-            Data1: 42
+            Data1: 31
             Data2: 100
