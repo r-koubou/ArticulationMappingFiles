@@ -2,6 +2,19 @@
 
 set -e
 
+echo "## Cleaning up old converted files and generated markdown files..."
+
+rm -fr zensical/docs/assets/converted
+rm -fr zensical/docs/Cakewalk/*/
+rm -fr zensical/docs/Cubase/*/
+rm -fr zensical/docs/Logic/*/
+rm -fr zensical/docs/StudioOne/*/
+rm -fr zensical/site
+
+echo "----------------------------------------------------------------------------"
+echo "👍 Cleaned up old converted files and generated markdown files"
+echo "----------------------------------------------------------------------------"
+
 echo "## Converting ArtiCluster definition files and generating markdown files..."
 
 dotnet tool exec -y ArtiCluster \
