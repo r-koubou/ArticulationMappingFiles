@@ -1,10 +1,99 @@
 FormatVersion: 0
-Id: 134cc784-b6da-4fec-b3a9-05eb66513533
+Id: 16e20528-4947-49fc-abf9-56c81f454650
 Author: R-Koubou
 ManufacturerName: IK Multimedia
 ProductName: MODO Bass 2
-PatchName: Flet Position
+PatchName: MODO Bass 2
 ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Pizzicato / Finger
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 100
+      - Name: Pick
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 100
+      - Name: Slap
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 100
+      - Name: Ham. On/Pull Off
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 100
+      - Name: Ghost Mode
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 100
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 100
+      - Name: Index/Down Stroke | Force Slap
+        MidiMessages:
+          - Status: 144
+            Data1: 13
+            Data2: 100
+      - Name: Middle/Down Stroke | Force Pull
+        MidiMessages:
+          - Status: 144
+            Data1: 15
+            Data2: 100
+      - Name: Force C String
+        MidiMessages:
+          - Status: 144
+            Data1: 12
+            Data2: 100
+      - Name: Force G String
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 100
+      - Name: Force D String
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 100
+      - Name: Force A String
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 100
+      - Name: Force E String
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 100
+      - Name: Force B String
+        MidiMessages:
+          - Status: 144
+            Data1: 23
+            Data2: 100
+      - Name: Stop On Detach
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 100
+      - Name: DB Slap Noise
+        MidiMessages:
+          - Status: 144
+            Data1: 37
+            Data2: 100
+      - Name: DB Stop Strings
+        MidiMessages:
+          - Status: 144
+            Data1: 39
+            Data2: 100
   - Name: Flet Position
     Articulations:
       - Name: Idle
