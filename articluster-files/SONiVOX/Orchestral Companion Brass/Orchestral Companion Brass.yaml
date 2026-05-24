@@ -1,9 +1,9 @@
 FormatVersion: 0
-Id: 2908833b-11d7-28ee-0659-c57de5f12ad6
+Id: 671ecbbc-0b86-c4d0-0008-625f18cb4b70
 Author: R-Koubou
 ManufacturerName: SONiVOX
-ProductName: Orchestral Companion Strings
-PatchName: Main
+ProductName: Orchestral Companion Brass
+PatchName: Orchestral Companion Brass
 ArticulationGroups:
   - Name: Main
     Articulations:
@@ -19,18 +19,23 @@ ArticulationGroups:
           - Status: 144
             Data1: 13
             Data2: 120
-      - Name: Spiccato
+      - Name: Sustain Mutes
         MidiMessages:
           - Status: 144
             Data1: 14
             Data2: 120
-      - Name: Pizzicato
+      - Name: Staccato Mutes
         MidiMessages:
           - Status: 144
             Data1: 15
             Data2: 120
-      - Name: Tremolo
+      - Name: SForzando
         MidiMessages:
           - Status: 144
             Data1: 16
+            Data2: 120
+      - Name: Marcato
+        MidiMessages:
+          - Status: 144
+            Data1: 17
             Data2: 120

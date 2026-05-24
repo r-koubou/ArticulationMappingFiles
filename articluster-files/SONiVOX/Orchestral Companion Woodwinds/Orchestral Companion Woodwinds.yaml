@@ -1,41 +1,36 @@
 FormatVersion: 0
-Id: 33e01b12-d747-9092-ccc9-2d2167217c40
+Id: e21a9629-8681-3fcc-7b03-dd5ae2389f9f
 Author: R-Koubou
-ManufacturerName: Red Room Audio
-ProductName: Palette Sketchpad
-PatchName: Main
+ManufacturerName: SONiVOX
+ProductName: Orchestral Companion Woodwinds
+PatchName: Orchestral Companion Woodwinds
 ArticulationGroups:
   - Name: Main
     Articulations:
       - Name: Idle
         MidiMessages: []
-      - Name: Strings Sus
+      - Name: Sustain Vib
         MidiMessages:
           - Status: 144
-            Data1: 96
+            Data1: 12
             Data2: 120
-      - Name: Strings Stac
+      - Name: Sustain NoVib
         MidiMessages:
           - Status: 144
-            Data1: 97
+            Data1: 13
             Data2: 120
-      - Name: Winds Sus
+      - Name: Staccato
         MidiMessages:
           - Status: 144
-            Data1: 98
+            Data1: 14
             Data2: 120
-      - Name: Winds Stac
+      - Name: Staccatisimo
         MidiMessages:
           - Status: 144
-            Data1: 99
+            Data1: 15
             Data2: 120
-      - Name: Brass Sus
+      - Name: Various
         MidiMessages:
           - Status: 144
-            Data1: 100
-            Data2: 120
-      - Name: Brass Stac
-        MidiMessages:
-          - Status: 144
-            Data1: 101
+            Data1: 16
             Data2: 120
