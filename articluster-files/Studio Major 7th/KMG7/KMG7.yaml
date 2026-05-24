@@ -1,9 +1,9 @@
 FormatVersion: 0
-Id: 07965b25-abfe-6449-a080-02d7a734c8d2
+Id: ef01bcd6-7c76-4509-8dd9-4dd5a880ce92
 Author: R-Koubou
 ManufacturerName: Studio Major 7th
 ProductName: KMG7
-PatchName: Main
+PatchName: KMG7
 ArticulationGroups:
   - Name: Main
     Articulations:
@@ -58,6 +58,50 @@ ArticulationGroups:
         MidiMessages:
           - Status: 144
             Data1: 42
+            Data2: 120
+      - Name: All Note Off
+        MidiMessages:
+          - Status: 144
+            Data1: 21
+            Data2: 120
+  - Name: String
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: String 1
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: String 2
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
+      - Name: String 3
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: String 4
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: String 5
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: String 6
+        MidiMessages:
+          - Status: 144
+            Data1: 33
+            Data2: 120
+      - Name: String 7
+        MidiMessages:
+          - Status: 144
+            Data1: 35
             Data2: 120
       - Name: All Note Off
         MidiMessages:
