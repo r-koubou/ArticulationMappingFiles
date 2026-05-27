@@ -69,6 +69,7 @@ jobs:
         VERSION=${{ github.ref_name }}@${{ github.sha }}
         sed -i "s?##VERSION##?${VERSION}?g" zensical/docs/index.md
         sed -i "s?##BUILD_DATE##?${BUILD_DATE}?g" zensical/docs/index.md
+        sed -i "s?##ARTICLUSTER_VERSION##?${{ vars.USE_ARTICLUSTER_VERSION }}?g" zensical/docs/index.md
 
         {
           echo "## Build Information";
@@ -77,6 +78,7 @@ jobs:
           echo "|----|-----|"
           echo "|Version|${VERSION}|"
           echo "|Build Date|${BUILD_DATE}|"
+          echo "|ArtiCluster Version|${{ vars.USE_ARTICLUSTER_VERSION }}|"
         } >> $GITHUB_STEP_SUMMARY
 
     #----------------------------------------------------------
