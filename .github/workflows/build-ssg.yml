@@ -54,7 +54,7 @@ jobs:
     #----------------------------------------------------------
     - name: Convert Articluster-files and Generate Markdown Page for zensical
       run: |
-        dotnet tool exec -y ArtiCluster \
+        dotnet tool exec -y ArtiCluster@${{ vars.USE_ARTICLUSTER_VERSION }} \
             convert \
             --output-markdown-list-dir ${ARTICLUSTER_MARKDOWN_OUTPUT} \
             ${ARTICLUSTER_INPUT} \
