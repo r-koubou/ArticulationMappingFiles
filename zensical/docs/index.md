@@ -65,8 +65,8 @@ See the [LICENSE in GitHub repository](https://github.com/r-koubou/ArticulationM
 
 ## Build Information
 
-| name       | value          |
-| ---------- | -------------- |
-| Version    | ##VERSION##    |
-| Build Date | ##BUILD_DATE## |
-
+| name                | value                   |
+| ------------------- | ----------------------- |
+| Version             | ##VERSION##             |
+| Build Date          | ##BUILD_DATE##          |
+| ArtiCluster Version | ##ARTICLUSTER_VERSION## |

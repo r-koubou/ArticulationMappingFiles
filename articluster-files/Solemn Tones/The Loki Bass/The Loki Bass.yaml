@@ -1,0 +1,60 @@
+FormatVersion: 0
+Id: 1e8de598-74a7-4a91-bfa0-bd0ee2bd5c11
+Author: R-Koubou
+ManufacturerName: Solemn Tones
+ProductName: The Loki Bass
+PatchName: The Loki Bass
+ArticulationGroups:
+  - Name: Main
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Mute 1
+        MidiMessages:
+          - Status: 144
+            Data1: 27
+            Data2: 120
+      - Name: Mute 2
+        MidiMessages:
+          - Status: 144
+            Data1: 28
+            Data2: 120
+      - Name: Mute 3
+        MidiMessages:
+          - Status: 144
+            Data1: 29
+            Data2: 120
+      - Name: Harmonics
+        MidiMessages:
+          - Status: 144
+            Data1: 30
+            Data2: 120
+      - Name: Tapping
+        MidiMessages:
+          - Status: 144
+            Data1: 31
+            Data2: 120
+      - Name: Scrapes
+        MidiMessages:
+          - Status: 144
+            Data1: 32
+            Data2: 120
+  - Name: Picking
+    Articulations:
+      - Name: Idle
+        MidiMessages: []
+      - Name: Alt Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 24
+            Data2: 120
+      - Name: Down Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 25
+            Data2: 120
+      - Name: Up Picking
+        MidiMessages:
+          - Status: 144
+            Data1: 26
+            Data2: 120
