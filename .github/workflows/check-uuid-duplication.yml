@@ -2,8 +2,6 @@ name: Check YAML UUID Duplication
 
 on:
   pull_request:
-    paths:
-      - 'articluster-files/**/*.yaml'
 
   push:
     branches:
@@ -11,8 +9,6 @@ on:
       - feature/**
       - fix/**
       - refactor/**
-    paths:
-      - 'articluster-files/**/*.yaml'
 
   workflow_call:
   workflow_dispatch:
