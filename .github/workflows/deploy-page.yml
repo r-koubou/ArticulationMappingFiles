@@ -4,8 +4,11 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**/README.md'
-      - '**/NOTICE.md'
+      - '.vscode/**'
+      - 'README.md'
+      - 'tools/**/README.md'
+      - 'tools/**/NOTICE.md'
+      - 'tools/**/LICENSE'
       - '**/.gitignore'
       - LICENSE
       - CONTRIBUTING.md
