@@ -4,8 +4,11 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**/README.md'
-      - '**/NOTICE.md'
+      - '.vscode/**'
+      - 'README.md'
+      - 'tools/**/README.md'
+      - 'tools/**/NOTICE.md'
+      - 'tools/**/LICENSE'
       - '**/.gitignore'
       - LICENSE
       - CONTRIBUTING.md
@@ -31,97 +34,97 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
-       TZ: 'Asia/Tokyo'
-       SSG_PAGE_DIR: .work/gh-pages
-       ARTICLUSTER_CONVERTED_DIR: .work/articluster-converted
+      TZ: 'Asia/Tokyo'
+      SSG_PAGE_DIR: .work/gh-pages
+      ARTICLUSTER_CONVERTED_DIR: .work/articluster-converted
 
     steps:
-    #----------------------------------------------------------
-    # Checkout repository
-    #----------------------------------------------------------
-    - name: Checkout
-      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      #----------------------------------------------------------
+      # Checkout repository
+      #----------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-    #----------------------------------------------------------
-    # Configure GitHub Pages
-    #----------------------------------------------------------
-    - name: Configure GitHub Pages
-      uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      #----------------------------------------------------------
+      # Configure GitHub Pages
+      #----------------------------------------------------------
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
-    #----------------------------------------------------------
-    # Download SSG page artifact
-    #----------------------------------------------------------
-    - name: Download SSG page artifact
-      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-      with:
-        name: page-files
-        path: ${{ env.SSG_PAGE_DIR }}
+      #----------------------------------------------------------
+      # Download SSG page artifact
+      #----------------------------------------------------------
+      - name: Download SSG page artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: page-files
+          path: ${{ env.SSG_PAGE_DIR }}
 
-    #----------------------------------------------------------
-    # Upload GitHub Pages artifact
-    #----------------------------------------------------------
-    - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v6.0.0
-      with:
-        path: ${{ env.SSG_PAGE_DIR }}
+      #----------------------------------------------------------
+      # Upload GitHub Pages artifact
+      #----------------------------------------------------------
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v6.0.0
+        with:
+          path: ${{ env.SSG_PAGE_DIR }}
 
-    #----------------------------------------------------------
-    # Deploy zensical page to GitHub Pages
-    #----------------------------------------------------------
-    - name: Deploy zensical page to GitHub Pages
-      uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
-      id: deployment
+      #----------------------------------------------------------
+      # Deploy zensical page to GitHub Pages
+      #----------------------------------------------------------
+      - name: Deploy zensical page to GitHub Pages
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        id: deployment
 
-    #----------------------------------------------------------
-    # Download ArtiCluster converted data artifact
-    #----------------------------------------------------------
-    - name: Download ArtiCluster converted data artifact
-      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-      with:
-        name: all-converted-files
-        path: ${{ env.ARTICLUSTER_CONVERTED_DIR }}
+      #----------------------------------------------------------
+      # Download ArtiCluster converted data artifact
+      #----------------------------------------------------------
+      - name: Download ArtiCluster converted data artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: all-converted-files
+          path: ${{ env.ARTICLUSTER_CONVERTED_DIR }}
 
-    #----------------------------------------------------------
-    # Create Assets for GitHub Release
-    #----------------------------------------------------------
-    - name: Create Assets for GitHub Release
-      run: |
-        DATE=$(date +"%Y%m%d")
-        SHORT_SHA=$(git rev-parse --short HEAD)
-        ALL_CONVERTED_FILES_ZIP=all-converted-files-${DATE}-${SHORT_SHA}.zip
+      #----------------------------------------------------------
+      # Create Assets for GitHub Release
+      #----------------------------------------------------------
+      - name: Create Assets for GitHub Release
+        run: |
+          DATE=$(date +"%Y%m%d")
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          ALL_CONVERTED_FILES_ZIP=all-converted-files-${DATE}-${SHORT_SHA}.zip
 
-        echo "DATE=${DATE}" >> $GITHUB_ENV
-        echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
-        echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
+          echo "DATE=${DATE}" >> $GITHUB_ENV
+          echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
+          echo "ALL_CONVERTED_FILES_ZIP=${ALL_CONVERTED_FILES_ZIP}" >> $GITHUB_ENV
 
-        mkdir -p all-converted-files
-        cp -r ${ARTICLUSTER_CONVERTED_DIR}/* all-converted-files/
-        zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files/
+          mkdir -p all-converted-files
+          cp -r ${ARTICLUSTER_CONVERTED_DIR}/* all-converted-files/
+          zip -r ${ALL_CONVERTED_FILES_ZIP} all-converted-files/
 
-    #----------------------------------------------------------
-    # Add git tag for release
-    #----------------------------------------------------------
-    - name: Add git tag for release
-      run: |
-        TAG_NAME=ver-${DATE}-${SHORT_SHA}
+      #----------------------------------------------------------
+      # Add git tag for release
+      #----------------------------------------------------------
+      - name: Add git tag for release
+        run: |
+          TAG_NAME=ver-${DATE}-${SHORT_SHA}
 
-        echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
 
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@users.noreply.github.com"
-        git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
-        git push origin "${TAG_NAME}"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git tag -a "${TAG_NAME}" -m "Release ${TAG_NAME}"
+          git push origin "${TAG_NAME}"
 
-    #----------------------------------------------------------
-    # Create GitHub Release
-    #----------------------------------------------------------
-    - name: Create GitHub Release
-      env:
-        GH_TOKEN: ${{ github.token }}
-      run: |
-        gh release \
-          create "${TAG_NAME}" \
-          --repo "${{ github.repository }}" \
-          --title "${TAG_NAME}" \
-          --latest --generate-notes \
-          ${ALL_CONVERTED_FILES_ZIP}
+      #----------------------------------------------------------
+      # Create GitHub Release
+      #----------------------------------------------------------
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release \
+            create "${TAG_NAME}" \
+            --repo "${{ github.repository }}" \
+            --title "${TAG_NAME}" \
+            --latest --generate-notes \
+            ${ALL_CONVERTED_FILES_ZIP}

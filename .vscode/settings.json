@@ -1,0 +1,25 @@
+{
+  //-----------------------------------------------------------
+  // General
+  //-----------------------------------------------------------
+  "files.insertFinalNewline": true,
+  //-----------------------------------------------------------
+  // YAML
+  //-----------------------------------------------------------
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/r-koubou/articluster/refs/heads/develop/docs/universal-definition/v1-draft/universal-definition-schema.json": [
+      "/articluster-files/**/*.yaml"
+    ]
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.format.singleQuote": true,
+  //-----------------------------------------------------------
+  // JSON
+  //-----------------------------------------------------------
+  "[json][jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
