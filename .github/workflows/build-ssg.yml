@@ -20,90 +20,90 @@ jobs:
     permissions:
       contents: write
     env:
-       TZ: 'Asia/Tokyo'
-       ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
-       ARTICLUSTER_OUTPUT: ${{ github.workspace }}/zensical/docs/assets/converted
-       ARTICLUSTER_MARKDOWN_OUTPUT: ${{ github.workspace }}/zensical/docs
+      TZ: 'Asia/Tokyo'
+      ARTICLUSTER_INPUT: ${{ github.workspace }}/articluster-files
+      ARTICLUSTER_OUTPUT: ${{ github.workspace }}/zensical/docs/assets/converted
+      ARTICLUSTER_MARKDOWN_OUTPUT: ${{ github.workspace }}/zensical/docs
 
     steps:
-    #----------------------------------------------------------
-    # Checkout repository
-    #----------------------------------------------------------
-    - name: Checkout
-      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      #----------------------------------------------------------
+      # Checkout repository
+      #----------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-    #----------------------------------------------------------
-    # Setup .NET SDK
-    #----------------------------------------------------------
-    - name: Install .NET SDK
-      uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
-      with:
-        dotnet-version: ${{ vars.DOTNET_SDK_VERSION }}
+      #----------------------------------------------------------
+      # Setup .NET SDK
+      #----------------------------------------------------------
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+        with:
+          dotnet-version: ${{ vars.DOTNET_SDK_VERSION }}
 
-    #----------------------------------------------------------
-    # Setup dependency build tools from .prototools
-    #----------------------------------------------------------
-    - name: Setup Dependency Build Tools from .prototools
-      uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
-      with:
-        auto-install: true
+      #----------------------------------------------------------
+      # Setup dependency build tools from .prototools
+      #----------------------------------------------------------
+      - name: Setup Dependency Build Tools from .prototools
+        uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
+        with:
+          auto-install: true
 
-    #----------------------------------------------------------
-    # Convert articluster-files/
-    # Generate Markdown Page for zensical
-    #----------------------------------------------------------
-    - name: Convert Articluster-files and Generate Markdown Page for zensical
-      run: |
-        dotnet tool exec -y ArtiCluster@${{ vars.USE_ARTICLUSTER_VERSION }} \
-            convert \
-            --output-markdown-list-dir ${ARTICLUSTER_MARKDOWN_OUTPUT} \
-            ${ARTICLUSTER_INPUT} \
-            ${ARTICLUSTER_OUTPUT}
+      #----------------------------------------------------------
+      # Convert articluster-files/
+      # Generate Markdown Page for zensical
+      #----------------------------------------------------------
+      - name: Convert Articluster-files and Generate Markdown Page for zensical
+        run: |
+          dotnet tool exec -y ArtiCluster@${{ vars.USE_ARTICLUSTER_VERSION }} \
+              convert \
+              --output-markdown-list-dir ${ARTICLUSTER_MARKDOWN_OUTPUT} \
+              ${ARTICLUSTER_INPUT} \
+              ${ARTICLUSTER_OUTPUT}
 
-    #----------------------------------------------------------
-    # Replace build information in zensical page
-    #----------------------------------------------------------
-    - name: Replace build information in zensical page (index.md)
-      run: |
-        BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%S+09:00")
-        VERSION=${{ github.ref_name }}@${{ github.sha }}
-        sed -i "s?##VERSION##?${VERSION}?g" zensical/docs/index.md
-        sed -i "s?##BUILD_DATE##?${BUILD_DATE}?g" zensical/docs/index.md
-        sed -i "s?##ARTICLUSTER_VERSION##?${{ vars.USE_ARTICLUSTER_VERSION }}?g" zensical/docs/index.md
+      #----------------------------------------------------------
+      # Replace build information in zensical page
+      #----------------------------------------------------------
+      - name: Replace build information in zensical page (index.md)
+        run: |
+          BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%S+09:00")
+          VERSION=${{ github.ref_name }}@${{ github.sha }}
+          sed -i "s?##VERSION##?${VERSION}?g" zensical/docs/index.md
+          sed -i "s?##BUILD_DATE##?${BUILD_DATE}?g" zensical/docs/index.md
+          sed -i "s?##ARTICLUSTER_VERSION##?${{ vars.USE_ARTICLUSTER_VERSION }}?g" zensical/docs/index.md
 
-        {
-          echo "## Build Information";
-          echo ""
-          echo "|name|value|"
-          echo "|----|-----|"
-          echo "|Version|${VERSION}|"
-          echo "|Build Date|${BUILD_DATE}|"
-          echo "|ArtiCluster Version|${{ vars.USE_ARTICLUSTER_VERSION }}|"
-        } >> $GITHUB_STEP_SUMMARY
+          {
+            echo "## Build Information";
+            echo ""
+            echo "|name|value|"
+            echo "|----|-----|"
+            echo "|Version|${VERSION}|"
+            echo "|Build Date|${BUILD_DATE}|"
+            echo "|ArtiCluster Version|${{ vars.USE_ARTICLUSTER_VERSION }}|"
+          } >> $GITHUB_STEP_SUMMARY
 
-    #----------------------------------------------------------
-    # Build zensical page
-    #----------------------------------------------------------
-    - name: Build zensical page
-      run: |
-        pushd zensical
-          uvx zensical build --clean
-        popd
+      #----------------------------------------------------------
+      # Build zensical page
+      #----------------------------------------------------------
+      - name: Build zensical page
+        run: |
+          pushd zensical
+            uvx zensical build --clean
+          popd
 
-    #----------------------------------------------------------
-    # Upload zensical page artifact
-    #----------------------------------------------------------
-    - name: Upload zensical page artifact
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-      with:
-        name: page-files
-        path: zensical/site
+      #----------------------------------------------------------
+      # Upload zensical page artifact
+      #----------------------------------------------------------
+      - name: Upload zensical page artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: page-files
+          path: zensical/site
 
-    #----------------------------------------------------------
-    # Upload ArtiCluster converted data artifact
-    #----------------------------------------------------------
-    - name: Upload ArtiCluster converted data artifact
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-      with:
-        name: all-converted-files
-        path: ${{ env.ARTICLUSTER_OUTPUT }}
+      #----------------------------------------------------------
+      # Upload ArtiCluster converted data artifact
+      #----------------------------------------------------------
+      - name: Upload ArtiCluster converted data artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: all-converted-files
+          path: ${{ env.ARTICLUSTER_OUTPUT }}
